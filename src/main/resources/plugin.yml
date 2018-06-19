@@ -1,4 +1,30 @@
 name: JaggedAchievements
 main: org.jaggy.jaggedachievements.spigot.Jagged
-version: 0.1
+version: 0.3
 author: quirkylee
+
+commands:
+    achievements:
+        description: Achievements Command
+        aliases:
+            - ach
+        usage: /<command>
+        permission: jachievements.user
+
+permissions:
+    jachievements.user:
+        description: Allows user to use Jagged Achievements.
+        default: true
+    jachievements.mod:
+        description: Allows access to mod commands
+        default: op
+    jachievements.admin:
+        description: Allows access to admin commands
+        default: op
+    jachievements.*:
+        description: Wildcard allowing access to everything
+        default: op
+        children:
+            jachievements.user: true
+            jachievements.mod: true
+            jachievements.admin: true

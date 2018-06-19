@@ -1,0 +1,41 @@
+#
+# Jagged Achievements Configuration File
+#
+
+# Copyright (C) 2018 Quirkylee
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+# Is this server acting for itself or is part of a BungeeCord Network
+# If true it will rely on it's database heavily.
+# If false it will report and rely on BungeeCord for data. (Not Supported yet)
+StandAlone: true
+
+#Database Type: H2 and Mysql are supported.
+# If you want to have multiserver support this early in development use a
+# single mysql for all servers in your BungeeCord network. 
+DatabaseType: 'H2'
+
+#H2 Database Location if using H2
+DatabaseLocation: 'plugins/JaggedAchievements/'
+#Database name: It is the H2 the file name or Mysql Database name
+DatabaseName: 'achievements'
+#Mysql Port if using Mysql
+MysqlPort: '3306'
+
+#Mysql Username if using Mysql
+MysqlUser: 'root'
+#Mysql Password if using Mysql
+MysqlPass: ''
