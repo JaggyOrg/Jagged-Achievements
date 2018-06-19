@@ -1,0 +1,4 @@
+name: JaggedAchievements
+main: org.jaggy.jaggedachievements.spigot.Jagged
+version: 0.1
+author: quirkylee
