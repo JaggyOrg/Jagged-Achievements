@@ -1,7 +1,7 @@
 
 package org.jaggy.jaggedachievements.spigot;
 
-import java.util.logging.Logger;
+import org.jaggy.jaggedachievements.util.Logging;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -12,11 +12,11 @@ public class Jagged extends JavaPlugin {
 
     public Config config;
     public DB db;
-    public Logger log;
     boolean loaded;
+    public Logging log;
     
     public void onLoad() {
-        log = Logger.getLogger("JaggedAchievements");
+        log = new Logging();
         
         config = new Config();
         config.load(this);
@@ -25,7 +25,7 @@ public class Jagged extends JavaPlugin {
         db.load(this);
     }
     public void onEnable() {
-        
+        db.enable();
     }
     public void onDisable() {
         db.unload();

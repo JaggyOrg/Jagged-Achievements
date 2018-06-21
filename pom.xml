@@ -10,7 +10,7 @@
 
     <groupId>org.jaggy</groupId>
     <artifactId>JaggedAchievements</artifactId>
-    <version>0.3${revision}</version>
+    <version>0.4${revision}</version>
     <packaging>jar</packaging>
     <description>JaggedAchievements</description>
 
