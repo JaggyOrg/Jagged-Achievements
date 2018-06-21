@@ -23,13 +23,16 @@
 # If false it will report and rely on BungeeCord for data. (Not Supported yet)
 StandAlone: true
 
+#Servername:
+# Used to help determine what server they where on when the event happened.
+# The servername must not contain any spaces.
+ServerName: 'main'
+
 #Database Type: H2 and Mysql are supported.
 # If you want to have multiserver support this early in development use a
 # single mysql for all servers in your BungeeCord network. 
-DatabaseType: 'H2'
+DatabaseType: 'mysql'
 
-#H2 Database Location if using H2
-DatabaseLocation: 'plugins/JaggedAchievements/'
 #Database name: It is the H2 the file name or Mysql Database name
 DatabaseName: 'achievements'
 #Mysql Port if using Mysql
@@ -39,3 +42,5 @@ MysqlPort: '3306'
 MysqlUser: 'root'
 #Mysql Password if using Mysql
 MysqlPass: ''
+#Database Table Prefix
+DBPrefix: 'achievement_'

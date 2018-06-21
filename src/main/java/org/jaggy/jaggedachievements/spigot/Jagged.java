@@ -13,6 +13,7 @@ public class Jagged extends JavaPlugin {
     public Config config;
     public DB db;
     public Logger log;
+    boolean loaded;
     
     public void onLoad() {
         log = Logger.getLogger("JaggedAchievements");
@@ -25,5 +26,8 @@ public class Jagged extends JavaPlugin {
     }
     public void onEnable() {
         
+    }
+    public void onDisable() {
+        db.unload();
     }
 }

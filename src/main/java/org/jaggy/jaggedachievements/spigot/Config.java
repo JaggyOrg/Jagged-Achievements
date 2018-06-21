@@ -67,6 +67,14 @@ public class Config {
      * Sets the default Database name
      */
     public String defaultDBName = "achievements";
+    /**
+     * Sets the default Table Prefix
+     */
+    public String defaultDBPrefix = "achievement_";
+    /**
+     * Sets the default Server Name
+     */
+    public String defaultServerName = "main";
 
     /**
      * Gets if the server is a stand alone server.
@@ -130,6 +138,14 @@ public class Config {
         return config.getString("MysqlPass", defaultMysqlPass);
     }
     /**
+     * Gets the Server Name.
+     *
+     * @return String
+     */
+    public String getServerName() {
+        return config.getString("ServerName", defaultServerName);
+    }
+    /**
      * Gets the Mysql port.
      *
      * @return String
@@ -137,7 +153,14 @@ public class Config {
     public int getMysqlPort() {
         return config.getInt("MysqlPort", defaultMysqlPort);
     }
-
+    /**
+     * Gets the table prefix
+     * @return String
+     */
+    public String getPrefix() {
+        return config.getString("DBPrefix", defaultDBPrefix);
+    }
+    
     /**
      * Loads the config.yml
      *
