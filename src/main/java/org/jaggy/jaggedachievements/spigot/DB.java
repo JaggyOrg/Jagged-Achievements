@@ -81,34 +81,52 @@ public class DB {
     }
 
     private void createDB() throws SQLException, IOException {
+        // CReate Settings table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Settings (\n"
                 + "ServerID INT(64) NOT NULL AUTO_INCREMENT,\n"
                 + "Server VARCHAR(60),\n"
                 + "Version VARCHAR(60),\n"
                 + "PRIMARY KEY (ServerID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
-        this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Users (\n"
-                + "UUID VARCHAR(40) NOT NULL,\n"
+        
+        //Create Players table
+        this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Players (\n"
+                + "UID INT(64) NOT NULL AUTO_INCREMENT,\n"
                 + "Joined TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "LastSeen TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n"
                 + "Server VARCHAR(60),\n"
-                + "PRIMARY KEY (UUID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+                + "Name VARCHAR(60),\n"
+                + "PRIMARY KEY (UID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+                
+        //Create Player Events table
+        this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "PlayerEvents (\n"
+                + "EventID int(64) NOT NULL AUTO_INCREMENT,\n"
+                + "UID VARCHAR(64) NOT NULL,\n"
+                + "Location VARCHAR(255) NOT NULL,\n"
+                + "EventType INT(1) NOT NULL,\n"
+                + "Server VARCHAR(60),\n"
+                + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
+                + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+        
+        //Create Item Events table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "ItemEvents (\n"
                 + "EventID int(64) NOT NULL AUTO_INCREMENT,\n"
                 + "ItemID VARCHAR(30) NOT NULL,\n"
-                + "UUID VARCHAR(40) NOT NULL,\n"
-                + "Location VARCHAR(60) NOT NULL,\n"
+                + "UID VARCHAR(64) NOT NULL,\n"
+                + "Location VARCHAR(255) NOT NULL,\n"
                 + "EventType INT(1) NOT NULL,\n"
                 + "Server VARCHAR(60),\n"
-                + "eventtime TIMESTAMP NOT NULL,\n"
+                + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+        
+        //Create Block Events table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "BlockEvents (\n"
                 + "EventID int(64) NOT NULL AUTO_INCREMENT,\n"
                 + "BlockID VARCHAR(30) NOT NULL,\n"
-                + "UUID VARCHAR(40) NOT NULL,\n"
-                + "Location VARCHAR(60) NOT NULL,\n"
+                + "UID VARCHAR(64) NOT NULL,\n"
+                + "Location VARCHAR(255) NOT NULL,\n"
                 + "EventType INT(1) NOT NULL,\n"
                 + "Server VARCHAR(60),\n"
-                + "eventtime TIMESTAMP NOT NULL,\n"
+                + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
     }
 
