@@ -54,10 +54,14 @@ public class BlockEvents implements Listener {
                 db.query("INSERT INTO "+config.getPrefix()+"BlockEvents (BlockID, UID, Location, EventType, Server) "+
                         "VALUES ('"+block.getType()+"', '"+data.getInt("UID")+"', '"+player.getLocation()+
                         "', 0, '"+config.getServerName()+"')");
-            } catch (SQLException ex) {
+                ResultSet rows = db.query("SELECT COUNT(*) FROM "+config.getPrefix()+
+                        "BlockEvents WHERE UID = '"+data.getInt("UID")+"' AND BlockID = '"+block.getType()+"'");
+                if(rows.first()) {
+                    int count = rows.getInt(1);
+                }
+                
+            } catch (SQLException | SecurityException ex) {
                 plugin.log.log(Level.SEVERE, null, ex);
-            } catch (SecurityException ex) {
-                Logger.getLogger(BlockEvents.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

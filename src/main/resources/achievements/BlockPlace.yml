@@ -1,0 +1,634 @@
+#
+# Jagged Achievements Block Placement File
+#
+
+# Copyright (C) 2018 Quirkylee
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+######################################
+#                                    #
+# Placement Achievements             #
+#                                    #
+######################################
+DIRT:
+    1:
+        title: 'Filling In A Hole Achievement'
+        subtitle: 'Placed 1 dirt block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Filling In A Rut Achievement'
+        subtitle: 'Placed 10 dirt blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 dirt blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'Building A Hill Achievement'
+        subtitle: 'Placed 100 dirt blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Find A Use For Dirt Achievement'
+        subtitle: 'Placed 200 dirt blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'More Dirt Achievement'
+        subtitle: 'Placed 300 dirt blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Filling in the Grand Cayon'
+        subtitle: 'Placed 400 dirt blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Building A Mountian Achievement'
+        subtitle: 'Placed 500 dirt blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Dirt God/Godess'
+        subtitle: 'Placed 1000 dirt blocks'
+        xp: 300
+        commands: {}
+
+COBBLESTONE:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Cobblestone God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+
+WOOD:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+LOG:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+
+WOOL:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+
+CONCRETE:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+        
+QUARTZ_BLOCK:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+
+SANDSTONE:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+        
+GLASS:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+        
+STEP:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+
+IRON_BLOCK:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+        
+DIAMOND_BLOCK:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}
+        
+GOLD_BLOCK:
+    1:
+        title: 'First Cobblestone Achievement'
+        subtitle: 'Placed 1 cobblestone block'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Coblestonex10 Achievement'
+        subtitle: 'Placed 10 cobblestone blocks'
+        xp: 10
+        commands: {}
+    50:
+        title: 'Building A Small Mound Achievement'
+        subtitle: 'Placed 50 cobblestone blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'I Like Cobblestone Achievement'
+        subtitle: 'Placed 100 cobblestone blocks'
+        xp: 50
+        commands: {}
+    200:
+        title: 'Finding A Use For Cobblestone Achievement'
+        subtitle: 'Placed 200 cobblestone blocks'
+        xp: 100
+        commands: {}
+    300:
+        title: 'Building A Small Castle Achievement'
+        subtitle: 'Placed 300 cobblestone blocks'
+        xp: 150
+        commands: {}
+    400:
+        title: 'Gosh, 400 Cobblestone?'
+        subtitle: 'Placed 400 cobblestone blocks'
+        xp: 200
+        commands: {}
+    500:
+        title: 'Cobblestone Bridge Of The Galaxy'
+        subtitle: 'Placed 500 cobblestone blocks'
+        xp: 200
+        commands: {}
+    1000:
+        title: 'Wood God/Godess'
+        subtitle: 'Placed 1000 cobblestone blocks'
+        xp: 300
+        commands: {}

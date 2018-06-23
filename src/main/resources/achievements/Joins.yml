@@ -1,0 +1,92 @@
+#
+# Jagged Achievements Achievements File
+#
+
+# Copyright (C) 2018 Quirkylee
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+######################################
+#                                    #
+# Join Achievements                  #
+#                                    #
+######################################
+1:
+    title: 'Welcome to the server!'
+    subtitle: 'We have achievements for doing things on our server.'
+    xp: 10
+    commands: {}
+2:
+    title: '2 Server Joins Achievement'
+    subtitle: 'We thank you for using our server.'
+    xp: 10
+    commands: {}
+5:
+    title: '5 Server Joins Achievement'
+    subtitle: 'Keep playing on our server!'
+    xp: 20
+    commands: {}
+10:
+    title: '10 Server Joins Achievement'
+    subtitle: 'You are awesome!'
+    xp: 50
+    commands:
+    - give @p 22 5
+    - give @p 11 16
+20:
+    title: '20 Server Joins Achievement'
+    subtitle: 'By now your hooked or you are staff/an developer!'
+    xp: 100
+    commands: {}
+30:
+    title: '30 Server Joins Achievement'
+    subtitle: 'Gee, that is amazing you got 30 joins.'
+    xp: 100
+    commands: {}
+40:
+    title: '40 Server Joins Achievement'
+    subtitle: 'Jaggy likes rabits!'
+    xp: 100
+    commands: {}
+50:
+    title: '50 Server Joins Achievement'
+    subtitle: 'You can now call Quirkylee Willy Jones. JK!'
+    xp: 200
+    commands: {}
+60:
+    title: '60 Server Joins Achievement'
+    subtitle: 'You like us so much, you pratically love us!'
+    xp: 200
+    commands: {}
+70:
+    title: '70 Server Joins Achievement'
+    subtitle: 'You rock!'
+    xp: 250
+    commands: {}
+80:
+    title: '80 Server Joins Achievement'
+    subtitle: 'Have a pineapple just because you play so much!'
+    xp: 250
+    commands: {}
+90:
+    title: '90 Server Joins Achievement'
+    subtitle: 'You are almost a god! 90 Joins!'
+    xp: 250
+    commands: {}
+100:
+    title: '90 Server Joins Achievement'
+    subtitle: 'You are a god! 100 Joins!'
+    xp: 250
+    commands: {}

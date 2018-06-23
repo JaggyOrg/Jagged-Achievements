@@ -1,7 +1,7 @@
 name: JaggedAchievements
 main: org.jaggy.jaggedachievements.spigot.Jagged
 version: 0.4-SNAPSHOT
-author: quirkylee
+author: Quirkylee, Markjat
 
 commands:
     achievements:
