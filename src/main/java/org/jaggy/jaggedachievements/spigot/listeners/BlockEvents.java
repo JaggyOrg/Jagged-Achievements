@@ -20,10 +20,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Color;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -68,7 +66,7 @@ public class BlockEvents implements Listener {
                         int xp = config.Place.getInt(block.getType().toString()+"."+count+".xp");
                         List<String> commands = config.Place.getStringList(block.getType().toString()+"."+count+".commands");
                         player.sendTitle(ChatColor.GOLD+title, ChatColor.BLUE+subtitle, 20, 90, 20);
-                        player.sendMessage(ChatColor.BOLD+"Achievement: "+title);
+                        player.sendMessage(ChatColor.BOLD+"New Achievement: "+title);
                         db.query("INSERT INTO "+config.getPrefix()+"Achievements (UID, Achievement, Location,"
                                 +" EventType, XP, Server) VALUES ("
                                 +"'"+data.getInt("UID")+"', '"+title+"', '"+player.getLocation()+"', "
@@ -91,18 +89,43 @@ public class BlockEvents implements Listener {
     @EventHandler
     void OnBlockBreak(BlockBreakEvent event) {
         if(plugin.loaded) {
+            Block block = event.getBlock();
             try {
                 Player player = event.getPlayer();
                 ResultSet data = db.query("SELECT * FROM "+config.getPrefix()+"Players WHERE Name ='"+player.getName()+"'");
                 data.first();
-                Block block = event.getBlock();
                 db.query("INSERT INTO "+config.getPrefix()+"BlockEvents (BlockID, UID, Location, EventType, Server) "+
                         "VALUES ('"+block.getType()+"', '"+data.getInt("UID")+"', '"+player.getLocation()+
                         "', 1, '"+config.getServerName()+"')");
-            } catch (SQLException ex) {
+                
+                ResultSet rows = db.query("SELECT COUNT(*) FROM "+config.getPrefix()+
+                        "BlockEvents WHERE UID = '"+data.getInt("UID")+"' AND EventType = 1 AND BlockID = '"+block.getType()+"'");
+                
+                if(rows.next()) {
+                    int count = rows.getInt(1);
+                    if(config.Breaks.contains(block.getType()+"."+count)) {
+                        String title = config.Breaks.getString(block.getType().toString()+"."+count+".title");
+                        String subtitle = config.Breaks.getString(block.getType().toString()+"."+count+".subtitle");
+                        int xp = config.Breaks.getInt(block.getType().toString()+"."+count+".xp");
+                        List<String> commands = config.Breaks.getStringList(block.getType().toString()+"."+count+".commands");
+                        player.sendTitle(ChatColor.GOLD+title, ChatColor.BLUE+subtitle, 20, 90, 20);
+                        player.sendMessage(ChatColor.BOLD+"New Achievement: "+title);
+                        db.query("INSERT INTO "+config.getPrefix()+"Achievements (UID, Achievement, Location,"
+                                +" EventType, XP, Server) VALUES ("
+                                +"'"+data.getInt("UID")+"', '"+title+"', '"+player.getLocation()+"', "
+                                +"2, "+xp+", '"+config.getServerName()+"')");
+                        
+                        
+                        if(commands.iterator().hasNext()) {
+                            commands.forEach((command) -> {
+                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                            });
+                        }
+                    }
+                }
+                
+            } catch (SQLException | SecurityException ex) {
                 plugin.log.log(Level.SEVERE, null, ex);
-            } catch (SecurityException ex) {
-                Logger.getLogger(BlockEvents.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

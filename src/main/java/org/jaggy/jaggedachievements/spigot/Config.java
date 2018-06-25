@@ -91,6 +91,7 @@ public class Config {
      * Container for the BlockPlace.yml
      */
     public YamlConfiguration Place;
+    private YamlConfiguration Chat;
 
     /**
      * Gets if the server is a stand alone server.
@@ -197,7 +198,7 @@ public class Config {
             plugin.saveDefaultConfig();
             config = plugin.getConfig();
         }
-        File = new File("plugins/JaggedAchievements/achievements/Joins.yml");
+        File = new File(plugin.getDataFolder(), "achievements/Joins.yml");
 
         //Check and save joins file
         Joins = new YamlConfiguration();
@@ -233,6 +234,19 @@ public class Config {
         try {
             File = new File(plugin.getDataFolder(), "achievements/BlockPlace.yml");
             Place.load(File);
+        } catch (IOException | InvalidConfigurationException ex) {
+            plugin.log.log(Level.SEVERE, null, ex);
+        }
+        
+        //Check and save chat file
+        Chat = new YamlConfiguration();
+        File = new File(plugin.getDataFolder(), "achievements/Chat.yml");
+        if (!File.exists()) {
+            plugin.saveResource("achievements/Chat.yml", false);
+        }
+        try {
+            File = new File(plugin.getDataFolder(), "achievements/Chat.yml");
+            Chat.load(File);
         } catch (IOException | InvalidConfigurationException ex) {
             plugin.log.log(Level.SEVERE, null, ex);
         }

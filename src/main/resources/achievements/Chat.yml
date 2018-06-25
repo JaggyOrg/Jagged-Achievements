@@ -1,0 +1,161 @@
+#
+# Jagged Achievements Chat File
+#
+
+# Copyright (C) 20108 Quirkylee
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+######################################
+#                                    #
+# Chat Achievements                  #
+#                                    #
+######################################
+1:
+    title: 'First Chat!'
+    subtitle: 'You said something!'
+    xp: 10
+    commands: {}
+10:
+    title: 'Started a conversation!'
+    subtitle: 'Chatted 10 times!'
+    xp: 20
+    commands: {}
+50:
+    title: 'Feeling Chatty'
+    subtitle: 'Chatted 50 times!'
+    xp: 40
+    commands: {}
+100:
+    title: 'Conversationist!'
+    subtitle: 'Chatted 100 times!'
+    xp: 50
+    commands: {}
+200:
+    title: 'Congrats on 200 chats!'
+    subtitle: 'Chatted 200 times!'
+    xp: 50
+    commands: {}
+300:
+    title: 'Congrats on 300 chats!'
+    subtitle: 'Chatted 300 times!'
+    xp: 100
+    commands: {}
+400:
+    title: 'Congrats on 400 chats!'
+    subtitle: 'Chatted 400 times!'
+    xp: 100
+    commands: {}
+500:
+    title: 'Congrats on 500 chats!'
+    subtitle: 'Chatted 500 times!'
+    xp: 100
+    commands: {}
+600:
+    title: 'Congrats on 600 chats!'
+    subtitle: 'Chatted 600 times!'
+    xp: 150
+    commands: {}
+700:
+    title: 'Congrats on 700 chats!'
+    subtitle: 'Chatted 700 times!'
+    xp: 150
+    commands: {}
+800:
+    title: 'Congrats on 800 chats!'
+    subtitle: 'Chatted 800 times!'
+    xp: 150
+    commands: {}
+900:
+    title: 'Congrats on 900 chats!'
+    subtitle: 'Chatted 900 times!'
+    xp: 150
+    commands: {}
+1000:
+    title: '1K Club!'
+    subtitle: 'Chatted 1,000 times!'
+    xp: 150
+    commands: {}
+1500:
+    title: '1.5K Club!'
+    subtitle: 'Chatted 1,500 times!'
+    xp: 200
+    commands: {}
+2000:
+    title: '2K Club!'
+    subtitle: 'Chatted 2,000 times!'
+    xp: 200
+    commands: {}
+2500:
+    title: '2.5K Club!'
+    subtitle: 'Chatted 2,500 times!'
+    xp: 200
+    commands: {}
+3000:
+    title: '3K Club!'
+    subtitle: 'Chatted 3,000 times!'
+    xp: 200
+    commands: {}
+3500:
+    title: '3.5K Club!'
+    subtitle: 'Chatted 3,500 times!'
+    xp: 200
+    commands: {}
+4000:
+    title: '4K Club!'
+    subtitle: 'Chatted 4,000 times!'
+    xp: 200
+    commands: {}
+4500:
+    title: '4.5K Club!'
+    subtitle: 'Chatted 4,500 times!'
+    xp: 200
+    commands: {}
+5000:
+    title: '5K Club!'
+    subtitle: 'Chatted 5,000 times!'
+    xp: 200
+    commands: {}
+5500:
+    title: '5.5K Club!'
+    subtitle: 'Chatted 5,500 times!'
+    xp: 200
+    commands: {}
+6000:
+    title: '6K Club!'
+    subtitle: 'Chatted 6,000 times!'
+    xp: 200
+    commands: {}
+7000:
+    title: '7K Club!'
+    subtitle: 'Chatted 7,000 times!'
+    xp: 250
+    commands: {}
+8000:
+    title: '8K Club!'
+    subtitle: 'Chatted 8,000 times!'
+    xp: 250
+    commands: {}
+    
+9000:
+    title: '9K Club!'
+    subtitle: 'Chatted 9,000 times!'
+    xp: 250
+    commands: {}
+10000:
+    title: '10K Club!'
+    subtitle: 'Chatted 10,000 times!'
+    xp: 250
+    commands: {}

@@ -1,7 +1,6 @@
 
 package org.jaggy.jaggedachievements.spigot;
 
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.jaggy.jaggedachievements.util.Logging;
 import org.bukkit.plugin.java.JavaPlugin;
