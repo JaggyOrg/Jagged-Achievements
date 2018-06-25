@@ -17,7 +17,11 @@
 package org.jaggy.jaggedachievements.spigot;
 
 import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 
 /**
  * Standard config and defaults class
@@ -75,6 +79,18 @@ public class Config {
      * Sets the default Server Name
      */
     public String defaultServerName = "main";
+    /**
+     * Container for the Joins.yml
+     */
+    public YamlConfiguration Joins;
+    /**
+     * Container for the BlockBreak.yml
+     */
+    public YamlConfiguration Breaks;
+    /**
+     * Container for the BlockPlace.yml
+     */
+    public YamlConfiguration Place;
 
     /**
      * Gets if the server is a stand alone server.
@@ -102,6 +118,7 @@ public class Config {
     public String getDBLocation() {
         return config.getString("DatabaseLocation", defaultDBLocation);
     }
+
     /**
      * Gets the location of database if using H2
      *
@@ -137,6 +154,7 @@ public class Config {
     public String getMysqlPass() {
         return config.getString("MysqlPass", defaultMysqlPass);
     }
+
     /**
      * Gets the Server Name.
      *
@@ -145,6 +163,7 @@ public class Config {
     public String getServerName() {
         return config.getString("ServerName", defaultServerName);
     }
+
     /**
      * Gets the Mysql port.
      *
@@ -153,14 +172,16 @@ public class Config {
     public int getMysqlPort() {
         return config.getInt("MysqlPort", defaultMysqlPort);
     }
+
     /**
      * Gets the table prefix
+     *
      * @return String
      */
     public String getPrefix() {
         return config.getString("DBPrefix", defaultDBPrefix);
     }
-    
+
     /**
      * Loads the config.yml
      *
@@ -175,6 +196,45 @@ public class Config {
         } else { // neither exists yet (new installation), create and use it
             plugin.saveDefaultConfig();
             config = plugin.getConfig();
+        }
+        File = new File("plugins/JaggedAchievements/achievements/Joins.yml");
+
+        //Check and save joins file
+        Joins = new YamlConfiguration();
+        if (!File.exists()) {
+            plugin.saveResource("achievements/Joins.yml", false);
+        }
+        try {
+            File = new File(plugin.getDataFolder(), "achievements/Joins.yml");
+            Joins.load(File);
+        } catch (IOException | InvalidConfigurationException ex) {
+            plugin.log.log(Level.SEVERE, null, ex);
+        }
+        
+        //Check and save breaks file
+        Breaks = new YamlConfiguration();
+        File = new File(plugin.getDataFolder(), "achievements/BlockBreak.yml");
+        if (!File.exists()) {
+            plugin.saveResource("achievements/BlockBreak.yml", false);
+        }
+        try {
+            File = new File(plugin.getDataFolder(), "achievements/BlockBreak.yml");
+            Breaks.load(File);
+        } catch (IOException | InvalidConfigurationException ex) {
+            plugin.log.log(Level.SEVERE, null, ex);
+        }
+        
+        //Check and save breaks file
+        Place = new YamlConfiguration();
+        File = new File(plugin.getDataFolder(), "achievements/BlockPlace.yml");
+        if (!File.exists()) {
+            plugin.saveResource("achievements/BlockPlace.yml", false);
+        }
+        try {
+            File = new File(plugin.getDataFolder(), "achievements/BlockPlace.yml");
+            Place.load(File);
+        } catch (IOException | InvalidConfigurationException ex) {
+            plugin.log.log(Level.SEVERE, null, ex);
         }
     }
 }

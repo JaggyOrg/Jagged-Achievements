@@ -128,6 +128,17 @@ public class DB {
                 + "Server VARCHAR(60),\n"
                 + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+        //Create achievement table
+        this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Achievements (\n"
+                + "AID int(64) NOT NULL AUTO_INCREMENT,\n"
+                + "UID VARCHAR(30) NOT NULL,\n"
+                + "Achievement VARCHAR(200) NOT NULL,\n"
+                + "Location VARCHAR(255) NOT NULL,\n"
+                + "EventType INT(1) NOT NULL,\n"
+                + "XP INT(64) NOT NULL,\n"
+                + "Server VARCHAR(60),\n"
+                + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
+                + "PRIMARY KEY (AID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
     }
 
     public void unload() {
@@ -182,7 +193,6 @@ public class DB {
                         //plugin.getResource(version + "to" + current + ".sql");
                     }
                 } else {
-                    plugin.log.info("IN SCOPE!");
                     this.query("INSERT INTO " + Prefix + "Settings (Server, Version) VALUES ('" + plugin.config.getServerName() + "', '" + plugin.getDescription().getVersion() + "')");
                 }
             }

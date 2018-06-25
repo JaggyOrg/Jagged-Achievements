@@ -18,8 +18,12 @@ package org.jaggy.jaggedachievements.spigot.listeners;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Color;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -46,18 +50,37 @@ public class BlockEvents implements Listener {
     @EventHandler
     void onBlockPlace(BlockPlaceEvent event) {
         if(plugin.loaded) {
+            Block block = event.getBlockPlaced();
             try {
                 Player player = event.getPlayer();
                 ResultSet data = db.query("SELECT * FROM "+config.getPrefix()+"Players WHERE Name ='"+player.getName()+"'");
                 data.first();
-                Block block = event.getBlockPlaced();
                 db.query("INSERT INTO "+config.getPrefix()+"BlockEvents (BlockID, UID, Location, EventType, Server) "+
                         "VALUES ('"+block.getType()+"', '"+data.getInt("UID")+"', '"+player.getLocation()+
                         "', 0, '"+config.getServerName()+"')");
                 ResultSet rows = db.query("SELECT COUNT(*) FROM "+config.getPrefix()+
-                        "BlockEvents WHERE UID = '"+data.getInt("UID")+"' AND BlockID = '"+block.getType()+"'");
+                        "BlockEvents WHERE UID = '"+data.getInt("UID")+"' AND EventType = 0 AND BlockID = '"+block.getType()+"'");
                 if(rows.first()) {
                     int count = rows.getInt(1);
+                    if(config.Place.contains(block.getType().toString()+"."+count)) {
+                        String title = config.Place.getString(block.getType().toString()+"."+count+".title");
+                        String subtitle = config.Place.getString(block.getType().toString()+"."+count+".subtitle");
+                        int xp = config.Place.getInt(block.getType().toString()+"."+count+".xp");
+                        List<String> commands = config.Place.getStringList(block.getType().toString()+"."+count+".commands");
+                        player.sendTitle(ChatColor.GOLD+title, ChatColor.BLUE+subtitle, 20, 90, 20);
+                        player.sendMessage(ChatColor.BOLD+"Achievement: "+title);
+                        db.query("INSERT INTO "+config.getPrefix()+"Achievements (UID, Achievement, Location,"
+                                +" EventType, XP, Server) VALUES ("
+                                +"'"+data.getInt("UID")+"', '"+title+"', '"+player.getLocation()+"', "
+                                +"1, "+xp+", '"+config.getServerName()+"')");
+                        
+                        
+                        if(commands.iterator().hasNext()) {
+                            for(String command: commands) {
+                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                            }
+                        }
+                    }
                 }
                 
             } catch (SQLException | SecurityException ex) {
