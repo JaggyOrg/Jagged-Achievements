@@ -91,7 +91,7 @@ public class Config {
      * Container for the BlockPlace.yml
      */
     public YamlConfiguration Place;
-    private YamlConfiguration Chat;
+    public YamlConfiguration Chat;
 
     /**
      * Gets if the server is a stand alone server.

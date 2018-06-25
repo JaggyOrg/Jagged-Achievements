@@ -20,14 +20,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.event.player.PlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.jaggy.jaggedachievements.spigot.Config;
@@ -81,7 +79,7 @@ public class SessionEvents implements Listener {
                     if(config.Joins.contains(count.toString())) {
                         String title = config.Joins.getString(+count+".title");
                         String subtitle = config.Joins.getString(count+".subtitle");
-                        int xp = config.Place.getInt(count+".xp");
+                        int xp = config.Chat.getInt(count+".xp");
                         List<String> commands = config.Joins.getStringList(count+".commands");
                         
                         player.sendTitle(ChatColor.GOLD+title, ChatColor.BLUE+subtitle, 20, 90, 20);
@@ -136,8 +134,26 @@ public class SessionEvents implements Listener {
             try {
                 ResultSet data = db.query("SELECT * FROM "+config.getPrefix()+"Players WHERE Name ='"+player.getName()+"'");
                 if(data.first()) {
-                    int count = data.getInt("Chats")+1;
+                    Integer count = data.getInt("Chats")+1;
                     db.query("UPDATE "+config.getPrefix()+"Players SET Chats = '"+count+"' WHERE UID = "+data.getInt("UID"));
+                    if(config.Chat.contains(count.toString())) {
+                        String title = config.Chat.getString(+count+".title");
+                        String subtitle = config.Chat.getString(count+".subtitle");
+                        int xp = config.Chat.getInt(count+".xp");
+                        List<String> commands = config.Chat.getStringList(count+".commands");
+                        
+                        player.sendTitle(ChatColor.GOLD+title, ChatColor.BLUE+subtitle, 20, 90, 20);
+                        player.sendMessage(ChatColor.BOLD+"New Achievement: "+title);
+                        db.query("INSERT INTO "+config.getPrefix()+"Achievements (UID, Achievement, Location,"
+                                +" EventType, XP, Server) VALUES ("
+                                +"'"+data.getInt("UID")+"', '"+title+"', '"+player.getLocation()+"', "
+                                +"3, "+xp+", '"+config.getServerName()+"')");
+                        if(commands.iterator().hasNext()) {
+                            for(String command: commands) {
+                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                            }
+                        }
+                    }
                 }
             } catch (SQLException ex) {
                 plugin.log.log(Level.SEVERE, null, ex);

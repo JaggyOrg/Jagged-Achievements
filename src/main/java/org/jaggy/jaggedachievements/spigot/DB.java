@@ -92,6 +92,7 @@ public class DB {
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Players (\n"
                 + "UID INT(64) NOT NULL AUTO_INCREMENT,\n"
                 + "Joined TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
+                + "Chats INT(64) NOT NULL DEFAULT 0,\n"
                 + "LastSeen TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n"
                 + "Server VARCHAR(60),\n"
                 + "Name VARCHAR(60),\n"
