@@ -28,6 +28,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.scheduler.BukkitTask;
 import org.jaggy.jaggedachievements.spigot.Config;
 import org.jaggy.jaggedachievements.spigot.DB;
 import org.jaggy.jaggedachievements.spigot.Jagged;
@@ -47,15 +48,19 @@ public class SessionEvents implements Listener {
         db = plugin.db;
         config = plugin.config;
     }
-    
+    BukkitTask task;
     /**
      * Handle and log players signing in
      * @param event 
      */
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
+        
         Player player = event.getPlayer();
         if(plugin.loaded) {
+            // Create the task and schedule
+            task = new TimedEvents(this.plugin, event).runTaskTimer(this.plugin, 10, 20);
+            
             ResultSet data;
             data = db.query("SELECT * FROM "+config.getPrefix()+"Players WHERE Name ='"+player.getName()+"'");
             try {
@@ -116,6 +121,7 @@ public class SessionEvents implements Listener {
                             "VALUES ('"+data.getInt("UID")+"', '"+player.getLocation()+"', 1, '"+config.getServerName()+"')");
                     db.query("UPDATE "+config.getPrefix()+"Players SET Server = '"+config.getServerName()+"' WHERE UID = "+data.getInt("UID"));
                 }
+                task.cancel();
             } catch (SQLException ex) {
                 plugin.log.log(Level.SEVERE, null, ex);
             }

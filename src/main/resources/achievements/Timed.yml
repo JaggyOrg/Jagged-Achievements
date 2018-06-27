@@ -1,0 +1,87 @@
+#
+# Jagged Achievements Time File
+#
+
+# Copyright (C) 20108 Quirkylee
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+######################################
+#                                    #
+# Timed Achievements                 #
+#                                    #
+######################################
+
+# The numbers are in minutes
+5:
+    title: 'First Five!'
+    subtitle: 'You have been playing on this server for 5 minutes'
+    xp: 2
+    commands: {}
+15:
+    title: 'First Fifteen!'
+    subtitle: 'You have been playing on this server for 15 minutes'
+    xp: 2
+    commands: {}
+30:
+    title: 'First Thirty!'
+    subtitle: 'You have been playing on this server for 30 minutes'
+    xp: 5
+    commands: {}
+60:
+    title: 'Your Awesome!'
+    subtitle: 'You have been playing on this server for 1 hour'
+    xp: 10
+    commands: {}
+120:
+    title: 'We love that your having fun!'
+    subtitle: 'You have been playing on this server for 2 hours'
+    xp: 10
+    commands: {}
+180:
+    title: 'Going for the gold!'
+    subtitle: 'You have been playing on this server for 3 hours'
+    xp: 20
+    commands: {}
+240:
+    title: 'Going for the diamonds!'
+    subtitle: 'You have been playing on this server for 4 hours'
+    xp: 20
+    commands: {}
+300:
+    title: 'Hello, 5 hours! Thank you!'
+    subtitle: 'You have been playing on this server for 5 hours'
+    xp: 20
+    commands: {}
+360:
+    title: 'Megaplex of hours!'
+    subtitle: 'You have been playing on this server for 6 hours'
+    xp: 30
+    commands: {}
+420:
+    title: 'Idling Pro!'
+    subtitle: 'You have been playing on this server for 7 hours'
+    xp: 30
+    commands: {}
+480:
+    title: 'Idling God!'
+    subtitle: 'You have been playing on this server for 8 hours'
+    xp: 30
+    commands: {}
+540:
+    title: 'Pure Idling!'
+    subtitle: 'You have been playing on this server for 9 hours'
+    xp: 30
+    commands: {}

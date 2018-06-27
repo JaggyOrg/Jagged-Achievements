@@ -134,7 +134,7 @@ public class DB {
                 + "AID int(64) NOT NULL AUTO_INCREMENT,\n"
                 + "UID VARCHAR(30) NOT NULL,\n"
                 + "Achievement VARCHAR(200) NOT NULL,\n"
-                + "Location VARCHAR(255) NOT NULL,\n"
+                + "Location VARCHAR(255) DEFAULT NULL,\n"
                 + "EventType INT(1) NOT NULL,\n"
                 + "XP INT(64) NOT NULL,\n"
                 + "Server VARCHAR(60),\n"

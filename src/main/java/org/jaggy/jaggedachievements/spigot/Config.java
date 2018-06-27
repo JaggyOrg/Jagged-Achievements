@@ -91,7 +91,14 @@ public class Config {
      * Container for the BlockPlace.yml
      */
     public YamlConfiguration Place;
+    /**
+     * Container for the Chat.yml
+     */
     public YamlConfiguration Chat;
+    /**
+     * Container for the Timed.yml
+     */
+    public YamlConfiguration Timed;
 
     /**
      * Gets if the server is a stand alone server.
@@ -247,6 +254,19 @@ public class Config {
         try {
             File = new File(plugin.getDataFolder(), "achievements/Chat.yml");
             Chat.load(File);
+        } catch (IOException | InvalidConfigurationException ex) {
+            plugin.log.log(Level.SEVERE, null, ex);
+        }
+        
+        //Check and save timed file
+        Timed = new YamlConfiguration();
+        File = new File(plugin.getDataFolder(), "achievements/Timed.yml");
+        if (!File.exists()) {
+            plugin.saveResource("achievements/Timed.yml", false);
+        }
+        try {
+            File = new File(plugin.getDataFolder(), "achievements/Timed.yml");
+            Timed.load(File);
         } catch (IOException | InvalidConfigurationException ex) {
             plugin.log.log(Level.SEVERE, null, ex);
         }
