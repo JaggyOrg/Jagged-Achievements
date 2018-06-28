@@ -785,209 +785,163 @@ SQUID:
         commands: {}
 VILLAGER:
     1:
-        title: 'Putting out 1 blaze'
-        subtitle: 'Killed 1 blaze'
-        xp: 10
+        title: 'Angering the locals'
+        subtitle: 'Killed 1 villager'
+        xp: 20
         commands: {}
     10:
-        title: 'Putting out 10 blazes'
-        subtitle: 'Killed 10 blazes'
-        xp: 10
+        title: 'Angering the locals 2'
+        subtitle: 'Killed 10 villagers'
+        xp: 50
         commands: {}
     20:
-        title: 'Putting out 20 blazes'
-        subtitle: 'Killed 20 blazes'
-        xp: 10
-        commands: {}
-    30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
-        commands: {}
-    40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
-        xp: 10
+        title: 'Angering the locals 3'
+        subtitle: 'Killed 20 villagers'
+        xp: 100
         commands: {}
 WITCH:
     1:
-        title: 'Putting out 1 blaze'
-        subtitle: 'Killed 1 blaze'
-        xp: 10
+        title: 'Putting out the magic'
+        subtitle: 'Killed 1 witch'
+        xp: 50
         commands: {}
-    10:
-        title: 'Putting out 10 blazes'
-        subtitle: 'Killed 10 blazes'
-        xp: 10
+    2:
+        title: 'Putting out the magic 2'
+        subtitle: 'Killed 2 witchs'
+        xp: 100
         commands: {}
-    20:
-        title: 'Putting out 20 blazes'
-        subtitle: 'Killed 20 blazes'
-        xp: 10
-        commands: {}
-    30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
-        commands: {}
-    40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
+    3:
+        title: 'Putting out the magic 3'
+        subtitle: 'Killed 3 witchs'
         xp: 10
         commands: {}
 WITHER:
     1:
-        title: 'Putting out 1 blaze'
-        subtitle: 'Killed 1 blaze'
-        xp: 10
+        title: 'Withering away'
+        subtitle: 'Killed 1 wither'
+        xp: 30
         commands: {}
     10:
-        title: 'Putting out 10 blazes'
-        subtitle: 'Killed 10 blazes'
-        xp: 10
+        title: 'Withering away 2'
+        subtitle: 'Killed 10 withers'
+        xp: 40
         commands: {}
     20:
-        title: 'Putting out 20 blazes'
-        subtitle: 'Killed 20 blazes'
-        xp: 10
+        title: 'Withering away 3'
+        subtitle: 'Killed 20 withers'
+        xp: 50
         commands: {}
     30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
+        title: 'Withering away 4'
+        subtitle: 'Killed 30 withers'
+        xp: 60
         commands: {}
     40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
-        xp: 10
+        title: 'Withering away 5'
+        subtitle: 'Killed 40 withers'
+        xp: 70
         commands: {}
 WITHER_SKELETON:
     1:
-        title: 'Putting out 1 blaze'
-        subtitle: 'Killed 1 blaze'
-        xp: 10
+        title: 'Withering bones'
+        subtitle: 'Killed 1 wither skeleton'
+        xp: 30
         commands: {}
     10:
-        title: 'Putting out 10 blazes'
-        subtitle: 'Killed 10 blazes'
-        xp: 10
+        title: 'Withering bones 2'
+        subtitle: 'Killed 10 wither skeletons'
+        xp: 40
         commands: {}
     20:
-        title: 'Putting out 20 blazes'
-        subtitle: 'Killed 20 blazes'
-        xp: 10
+        title: 'Withering bones 3'
+        subtitle: 'Killed 20 wither skeletons'
+        xp: 50
         commands: {}
     30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
+        title: 'Withering bones 4'
+        subtitle: 'Killed 30 wither skeletons'
+        xp: 60
         commands: {}
     40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
-        xp: 10
+        title: 'Withering bones 4'
+        subtitle: 'Killed 40 wither skeletons'
+        xp: 70
         commands: {}
 WOLF:
     1:
-        title: 'Putting out 1 blaze'
-        subtitle: 'Killed 1 blaze'
-        xp: 10
+        title: 'one lonely wolf'
+        subtitle: 'Killed 1 wolf'
+        xp: 20
         commands: {}
     10:
-        title: 'Putting out 10 blazes'
-        subtitle: 'Killed 10 blazes'
-        xp: 10
+        title: 'Killed a pack of wolves'
+        subtitle: 'Killed 10 wolves'
+        xp: 30
         commands: {}
     20:
-        title: 'Putting out 20 blazes'
-        subtitle: 'Killed 20 blazes'
-        xp: 10
-        commands: {}
-    30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
-        commands: {}
-    40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
-        xp: 10
+        title: 'Population control'
+        subtitle: 'Killed 20 wolves'
+        xp: 40
         commands: {}
 ZOMBIE:
     1:
-        title: 'Putting out 1 blaze'
-        subtitle: 'Killed 1 blaze'
-        xp: 10
+        title: 'Walking dead'
+        subtitle: 'Killed 1 zombie'
+        xp: 20
         commands: {}
     10:
-        title: 'Putting out 10 blazes'
-        subtitle: 'Killed 10 blazes'
-        xp: 10
+        title: 'Walking dead 2'
+        subtitle: 'Killed 10 zombies'
+        xp: 30
         commands: {}
     20:
-        title: 'Putting out 20 blazes'
-        subtitle: 'Killed 20 blazes'
-        xp: 10
+        title: 'Walking dead 3'
+        subtitle: 'Killed 20 zombies'
+        xp: 40
         commands: {}
     30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
+        title: 'Walking dead 4'
+        subtitle: 'Killed 30 zombies'
+        xp: 50
         commands: {}
     40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
-        xp: 10
+        title: 'Walking dead 5'
+        subtitle: 'Killed 40 zombies'
+        xp: 60
+        commands: {}
+    50:
+        title: 'Walking dead 6'
+        subtitle: 'Killed 50 zombies'
+        xp: 60
+        commands: {}
+    60:
+        title: 'Walking dead 7'
+        subtitle: 'Killed 60 zombies'
+        xp: 60
+        commands: {}
+    70:
+        title: 'Walking dead 8'
+        subtitle: 'Killed 70 zombies'
+        xp: 60
+        commands: {}
+    90:
+        title: 'Walking dead 9'
+        subtitle: 'Killed 40 zombies'
+        xp: 60
         commands: {}
 ZOMBIE_HORSE:
     1:
-        title: 'Putting out 1 blaze'
+        title: 'One living dead horse'
         subtitle: 'Killed 1 blaze'
-        xp: 10
+        xp: 100
         commands: {}
-    10:
-        title: 'Putting out 10 blazes'
+    2:
+        title: 'Two living dead horses'
         subtitle: 'Killed 10 blazes'
-        xp: 10
+        xp: 200
         commands: {}
-    20:
-        title: 'Putting out 20 blazes'
+    3:
+        title: 'Three living dead horses'
         subtitle: 'Killed 20 blazes'
-        xp: 10
-        commands: {}
-    30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
-        commands: {}
-    40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
-        xp: 10
-        commands: {}
-ZOMBIE_VILLAGER:
-    1:
-        title: 'Putting out 1 blaze'
-        subtitle: 'Killed 1 blaze'
-        xp: 10
-        commands: {}
-    10:
-        title: 'Putting out 10 blazes'
-        subtitle: 'Killed 10 blazes'
-        xp: 10
-        commands: {}
-    20:
-        title: 'Putting out 20 blazes'
-        subtitle: 'Killed 20 blazes'
-        xp: 10
-        commands: {}
-    30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
-        commands: {}
-    40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
-        xp: 10
+        xp: 300
         commands: {}

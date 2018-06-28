@@ -16,25 +16,81 @@
  */
 package org.jaggy.jaggedachievements.spigot.listeners;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
+import org.jaggy.jaggedachievements.spigot.Config;
+import org.jaggy.jaggedachievements.spigot.DB;
+import org.jaggy.jaggedachievements.spigot.Jagged;
 
 /**
  * Entity events handler
+ *
  * @author Quirkylee
  */
-public class EntityEvents {
-    public EntityEvents() {
-        
+public class EntityEvents implements Listener {
+
+    private final Jagged plugin;
+    private final DB db;
+    private final Config config;
+
+    public EntityEvents(Jagged p) {
+        plugin = p;
+        db = plugin.db;
+        config = plugin.config;
     }
+
     @EventHandler
     public void onEntityDeath(EntityDeathEvent event) {
+
         LivingEntity entity = event.getEntity();
         Player player = entity.getKiller();
         EntityType type = entity.getType();
-        type.
+        if(player instanceof Player) {
+        try {
+            ResultSet data = db.query("SELECT * FROM " + config.getPrefix() + "Players WHERE Name ='" + player.getName() + "'");
+            data.first();
+            db.query("INSERT INTO " + config.getPrefix() + "EntityEvents (Entity, UID, Location, Server) "
+                    + "VALUES ('" + type.toString() + "', '" + data.getInt("UID") + "', '" + player.getLocation()
+                    + "', '" + config.getServerName() + "')");
+            ResultSet rows = db.query("SELECT COUNT(*) FROM " + config.getPrefix()
+                    + "EntityEvents WHERE UID = '" + data.getInt("UID") + "' AND Entity = '" + type.toString() + "'");
+           
+
+            if (rows.next()) {
+                int count = rows.getInt(1);
+                if (config.Entity.contains(type + "." + count)) {
+                    String title = config.Entity.getString(type.toString() + "." + count + ".title");
+                    String subtitle = config.Entity.getString(type.toString() + "." + count + ".subtitle");
+                    int xp = config.Entity.getInt(type.toString() + "." + count + ".xp");
+                    List<String> commands = config.Entity.getStringList(type.toString() + "." + count + ".commands");
+                    player.sendTitle(ChatColor.GOLD + title, ChatColor.BLUE + subtitle, 20, 90, 20);
+                    player.sendMessage(ChatColor.BOLD + "New Achievement: " + title);
+                    db.query("INSERT INTO " + config.getPrefix() + "Achievements (UID, Achievement, Location,"
+                            + " EventType, XP, Server) VALUES ("
+                            + "'" + data.getInt("UID") + "', '" + title + "', '" + player.getLocation() + "', "
+                            + "6, " + xp + ", '" + config.getServerName() + "')");
+
+                    if (commands.iterator().hasNext()) {
+                        commands.forEach((command) -> {
+                            plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                        });
+                    }
+                }
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(EntityEvents.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }
     }
 }

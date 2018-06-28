@@ -10,7 +10,7 @@
 
     <groupId>org.jaggy</groupId>
     <artifactId>JaggedAchievements</artifactId>
-    <version>0.4${revision}</version>
+    <version>1.0${revision}</version>
     <packaging>jar</packaging>
     <description>JaggedAchievements</description>
 
@@ -44,6 +44,10 @@
         <developer>
             <id>quirkylee</id>
             <name>Matthew Lindsey</name>
+        </developer>
+        <developer>
+            <id>markjat</id>
+            <name>Markjat</name>
         </developer>
     </developers>
 

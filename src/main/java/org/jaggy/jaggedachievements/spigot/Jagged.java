@@ -5,6 +5,7 @@ import org.bukkit.plugin.PluginManager;
 import org.jaggy.jaggedachievements.util.Logging;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jaggy.jaggedachievements.spigot.listeners.BlockEvents;
+import org.jaggy.jaggedachievements.spigot.listeners.EntityEvents;
 import org.jaggy.jaggedachievements.spigot.listeners.SessionEvents;
 
 /**
@@ -35,6 +36,7 @@ public class Jagged extends JavaPlugin {
         //Register event Listeners
         manager.registerEvents(new SessionEvents(this), this);
         manager.registerEvents( new BlockEvents(this), this);
+        manager.registerEvents( new EntityEvents(this), this);
     }
     public void onDisable() {
         db.unload();

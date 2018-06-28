@@ -27,19 +27,19 @@ public class Logging {
     private static final Logger log = Logger.getLogger("JaggedAchievements");
     
     public void info(String str) {
-        Logging.log.log(Level.INFO, "[JaggyAchievements] {0}", str);
+        Logging.log.log(Level.INFO, "[JaggedAchievements] {0}", str);
     }
     
     public void severe(String str) {
-        Logging.log.log(Level.SEVERE, "[JaggyAchievements] {0}", str);
+        Logging.log.log(Level.SEVERE, "[JaggedAchievements] {0}", str);
     }
     public void fine(String str) {
-        Logging.log.log(Level.FINE, "[JaggyAchievements] {0}", str);
+        Logging.log.log(Level.FINE, "[JaggedAchievements] {0}", str);
     }
     public void log(Level Level, String str) {
-       Logging.log.log(Level, "[JaggyAchievements] {0}", str);
+       Logging.log.log(Level, "[JaggedAchievements] {0}", str);
     }
     public void log(Level Level, String str, Throwable ex) {
-       Logging.log.log(Level,"[JaggyAchievements] " +str, ex);
+       Logging.log.log(Level,"[JaggedAchievements] " +str, ex);
     }
 }

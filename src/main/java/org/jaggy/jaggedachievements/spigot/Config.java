@@ -99,6 +99,8 @@ public class Config {
      * Container for the Timed.yml
      */
     public YamlConfiguration Timed;
+    public YamlConfiguration Entity;
+    public boolean defaultSSL = false;
 
     /**
      * Gets if the server is a stand alone server.
@@ -191,6 +193,14 @@ public class Config {
     }
 
     /**
+     * Gets if ssl is required
+     *
+     * @return String
+     */
+    public boolean useSSL() {
+        return config.getBoolean("DBPrefix", defaultSSL);
+    }
+    /**
      * Loads the config.yml
      *
      * @param p passes the parent class to this class
@@ -267,6 +277,19 @@ public class Config {
         try {
             File = new File(plugin.getDataFolder(), "achievements/Timed.yml");
             Timed.load(File);
+        } catch (IOException | InvalidConfigurationException ex) {
+            plugin.log.log(Level.SEVERE, null, ex);
+        }
+        
+        //Check and save entity file
+        Entity = new YamlConfiguration();
+        File = new File(plugin.getDataFolder(), "achievements/Entity.yml");
+        if (!File.exists()) {
+            plugin.saveResource("achievements/Entity.yml", false);
+        }
+        try {
+            File = new File(plugin.getDataFolder(), "achievements/Entity.yml");
+            Entity.load(File);
         } catch (IOException | InvalidConfigurationException ex) {
             plugin.log.log(Level.SEVERE, null, ex);
         }

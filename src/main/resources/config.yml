@@ -44,3 +44,5 @@ MysqlUser: 'root'
 MysqlPass: ''
 #Database Table Prefix
 DBPrefix: 'achievement_'
+#require ssl
+useSSL: false

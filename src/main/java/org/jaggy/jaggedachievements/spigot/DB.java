@@ -42,7 +42,7 @@ public class DB {
     private String DBName;
     private int MysqlPort;
     private String Prefix;
-    private Object settings;
+    private boolean useSSL;
 
     public void load(Jagged p) {
         plugin = p;
@@ -54,7 +54,7 @@ public class DB {
         MysqlPass = plugin.config.getMysqlPass();
         MysqlPort = plugin.config.getMysqlPort();
         Prefix = plugin.config.getPrefix();
-        settings = null;
+        useSSL = plugin.config.useSSL();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -62,7 +62,7 @@ public class DB {
             plugin.log.info("Connecting to database...");
             db = DriverManager.getConnection("jdbc:mysql://"
                     + MysqlHost + ":" + MysqlPort + "/" + DBName + "?"
-                    + "user=" + MysqlUser + "&useSSL=false&password=" + MysqlPass);
+                    + "user=" + MysqlUser + "&useSSL="+useSSL+"&password=" + MysqlPass);
         } catch (ClassNotFoundException | SQLException ex) {
             plugin.log.severe(ex.getMessage());
         }
@@ -129,6 +129,17 @@ public class DB {
                 + "Server VARCHAR(60),\n"
                 + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+        
+        //Create Entity Events table
+        this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "EntityEvents (\n"
+                + "EventID int(64) NOT NULL AUTO_INCREMENT,\n"
+                + "Entity VARCHAR(50) NOT NULL,\n"
+                + "UID VARCHAR(64) NOT NULL,\n"
+                + "Location VARCHAR(255) DEFAULT NULL,\n"
+                + "Server VARCHAR(60),\n"
+                + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
+                + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+        
         //Create achievement table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Achievements (\n"
                 + "AID int(64) NOT NULL AUTO_INCREMENT,\n"
