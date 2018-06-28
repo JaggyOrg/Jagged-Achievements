@@ -1,0 +1,993 @@
+#
+# Jagged Achievements Entity File
+#
+
+# Copyright (C) 20108 Quirkylee
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+######################################
+#                                    #
+# Entity Achievements                #
+#                                    #
+######################################
+BAT:
+    1:
+        title: '1 Batty'
+        subtitle: 'Killed 1 bat'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Going Batty'
+        subtitle: 'Killed 10 bats'
+        xp: 10
+        commands: {}
+    20:
+        title: '20 Batties'
+        subtitle: 'Killed 20 bats'
+        xp: 10
+        commands: {}
+    30:
+        title: 'I hate bats'
+        subtitle: 'Killed 30 bats'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Getting rid of all the bats'
+        subtitle: 'Killed 40 bats'
+        xp: 10
+        commands: {}
+    50:
+        title: 'No more bats'
+        subtitle: 'Killed 40 bats'
+        xp: 10
+        commands: {}
+BLAZE:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+CAVE_SPIDER:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}    
+CHICKEN:
+    1:
+        title: 'Getting some drumsticks'
+        subtitle: 'Killed 1 chicken'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Got Chicken?'
+        subtitle: 'Killed 10 chicken'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Enough Chicken?'
+        subtitle: 'Killed 20 chickens'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Building a KFC'
+        subtitle: 'Killed 30 chicken'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Cannot get enough chicken'
+        subtitle: 'Killed 40 chicken'
+        xp: 10
+        commands: {}
+COW:
+    1:
+        title: 'Cow tipper'
+        subtitle: 'Killed 1 cow'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Beef is for dinner!'
+        subtitle: 'Killed 10 cows'
+        xp: 10
+        commands: {}
+    20:
+        title: "Steak'ems"
+        subtitle: 'Killed 20 cows'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Feeding a small army'
+        subtitle: 'Killed 30 cows'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Beef farmer'
+        subtitle: 'Killed 40 cows'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Beef farmer 2'
+        subtitle: 'Killed 50 cows'
+        xp: 10
+        commands: {}
+CREEPER:
+    1:
+        title: "Didn't explode"
+        subtitle: 'Killed 1 creeper'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Getting some gun powder'
+        subtitle: 'Killed 10 creepers'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Enough gun powder to mine with'
+        subtitle: 'Killed 20 creepers'
+        xp: 10
+        commands: {}
+    30:
+        title: "Won't run out of gun powder"
+        subtitle: 'Killed 30 creepers'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Haha! Creepers?'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+DONKEY:
+    1:
+        title: 'Donkeys are annoying!'
+        subtitle: 'Killed 1 donkey'
+        xp: 10
+        commands: {}
+    10:
+        title: 'I hate donkeys'
+        subtitle: 'Killed 10 donkeys'
+        xp: 20
+        commands: {}
+ELDER_GUARDIAN:
+    1:
+        title: 'Disrepecting your elder'
+        subtitle: 'Killed 1 Elder Guardian'
+        xp: 100
+        commands: {}
+    2:
+        title: 'Disrepecting your elder 2'
+        subtitle: 'Killed 2 Elder Gaurdians'
+        xp: 10
+        commands: {}
+    3:
+        title: 'Disrepecting your elder 3'
+        subtitle: 'Killed 3 Elder Gaurdians'
+        xp: 10
+        commands: {}
+ENDER_DRAGON:
+    1:
+        title: 'Beat the dragon'
+        subtitle: 'Killed the Ender dragon'
+        xp: 300
+        commands: {}
+ENDERMAN:
+    1:
+        title: 'Putting an end to the griefer'
+        subtitle: 'Killed 1 Enderman'
+        xp: 50
+        commands: {}
+    2:
+        title: 'Putting an end to the griefer 2'
+        subtitle: 'Killed 2 Endermen'
+        xp: 100
+        commands: {}
+    3:
+        title: 'Putting an end to the griefer 3'
+        subtitle: 'Killed 20 blazes'
+        xp: 150
+        commands: {}
+ENDERMITE:
+    1:
+        title: 'Killed an endermite'
+        subtitle: 'Killed 1 endermite'
+        xp: 30
+        commands: {}
+    10:
+        title: 'I hate endermites'
+        subtitle: 'Killed 10 endermites'
+        xp: 60
+        commands: {}
+GHAST:
+    1:
+        title: 'Getting a tear'
+        subtitle: 'Killed 1 ghast'
+        xp: 100
+        commands: {}
+    2:
+        title: 'Getting 2 tears'
+        subtitle: 'Killed 2 ghast'
+        xp: 100
+        commands: {}
+    3:
+        title: 'Getting 3 tears'
+        subtitle: 'Killed 3 ghast'
+        xp: 100
+        commands: {}
+GIANT:
+    1:
+        title: 'There was a large thud'
+        subtitle: 'Killed 1 giant'
+        xp: 300
+        commands: {}
+    2:
+        title: 'Dropped 2 giants'
+        subtitle: 'Killed 2 giants'
+        xp: 300
+        commands: {}
+    3:
+        title: 'Dropped 3 giants'
+        subtitle: 'Killed 3 giants'
+        xp: 10
+        commands: {}
+GUARDIAN:
+    1:
+        title: 'Putting an end to there power'
+        subtitle: 'Killed 1 guardian'
+        xp: 200
+        commands: {}
+    2:
+        title: 'Putting an end to there power 2'
+        subtitle: 'Killed 2 guardians'
+        xp: 200
+        commands: {}
+HORSE:
+    1:
+        title: 'Finding a useless horse'
+        subtitle: 'Killed 1 horse'
+        xp: 50
+        commands: {}
+    2:
+        title: 'Searching for thee right horse'
+        subtitle: 'Killed 2 horses'
+        xp: 50
+        commands: {}
+    3:
+        title: 'Searching for thee right horse'
+        subtitle: 'Killed 3 horses'
+        xp: 50
+        commands: {}
+IRON_GOLEM:
+    1:
+        title: 'Getting a rose'
+        subtitle: 'Killed 1 iron golem'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Getting a rose 2'
+        subtitle: 'Killed 2 iron golems'
+        xp: 30
+        commands: {}
+    20:
+        title: 'Getting a rose 3'
+        subtitle: 'Killed 20 iron golems'
+        xp: 40
+        commands: {}
+    30:
+        title: 'Getting a rose 4'
+        subtitle: 'Killed 30 iron golems'
+        xp: 50
+        commands: {}
+    40:
+        title: 'Getting a rose 5'
+        subtitle: 'Killed 40 iron golems'
+        xp: 50
+        commands: {}
+LLAMA:
+    1:
+        title: 'Getting spit on'
+        subtitle: 'Killed 1 llama'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Getting spit on 2'
+        subtitle: 'Killed 10 llamas'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Getting spit on 3'
+        subtitle: 'Killed 20 llamas'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Getting spit on 4'
+        subtitle: 'Killed 30 llamas'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Getting spit on 5'
+        subtitle: 'Killed 40 llamas'
+        xp: 10
+        commands: {}
+MAGMA_CUBE:
+    1:
+        title: 'Getting magma cream'
+        subtitle: 'Killed 1 magma cream'
+        xp: 30
+        commands: {}
+    10:
+        title: 'Getting magma cream 2'
+        subtitle: 'Killed 10 magma cubes'
+        xp: 30
+        commands: {}
+    20:
+        title: 'Getting magma cream 3'
+        subtitle: 'Killed 20 magma cubes'
+        xp: 30
+        commands: {}
+    30:
+        title: 'Getting magma cream 4'
+        subtitle: 'Killed 30 magma cubes'
+        xp: 30
+        commands: {}
+    40:
+        title: 'Getting magma cream 5'
+        subtitle: 'Killed 40 magma cubes'
+        xp: 30
+        commands: {}
+MULE:
+    1:
+        title: 'Dealing with the stubborn mule'
+        subtitle: 'Killed 1 mule'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Dealing with the stubborn mule 2'
+        subtitle: 'Killed 10 mules'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Dealing with the stubborn mule 2'
+        subtitle: 'Killed 20 mules'
+        xp: 20
+        commands: {}
+    30:
+        title: 'Dealing with the stubborn mule 3'
+        subtitle: 'Killed 30 mules'
+        xp: 30
+        commands: {}
+    40:
+        title: 'Dealing with the stubborn mule 5'
+        subtitle: 'Killed 40 mules'
+        xp: 40
+        commands: {}
+MUSHROOM_COW:
+    1:
+        title: 'Mooshroom'
+        subtitle: 'Killed 1 Mushroom cow'
+        xp: 100
+        commands: {}
+    5:
+        title: 'Mooshroom 2'
+        subtitle: 'Killed 5 Mushroom cows'
+        xp: 100
+        commands: {}
+    10:
+        title: 'Mooshroom 3'
+        subtitle: 'Killed 10 Mushroom cows'
+        xp: 100
+        commands: {}
+    20:
+        title: 'Mooshroom 4'
+        subtitle: 'Killed 20 Mushroom cows'
+        xp: 100
+        commands: {}
+    30:
+        title: 'Mooshroom 5'
+        subtitle: 'Killed 30 blazes'
+        xp: 100
+        commands: {}
+OCELOT:
+    1:
+        title: 'Ocelot no more'
+        subtitle: 'Killed 1 Ocelot'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Ocelot no more 2'
+        subtitle: 'Killed 10 Ocelots'
+        xp: 20
+        commands: {}
+    20:
+        title: 'Ocelot no more 3'
+        subtitle: 'Killed 20 Ocelots'
+        xp: 30
+        commands: {}
+    30:
+        title: 'Ocelot no more 4'
+        subtitle: 'Killed 30 Ocelots'
+        xp: 40
+        commands: {}
+    40:
+        title: 'Ocelot no more 4'
+        subtitle: 'Killed 40 Ocelots'
+        xp: 50
+        commands: {}
+PARROT:
+    1:
+        title: 'Parrot bay'
+        subtitle: 'Killed 1 parrot'
+        xp: 30
+        commands: {}
+    10:
+        title: 'Parrot bay 2'
+        subtitle: 'Killed 10 parrots'
+        xp: 30
+        commands: {}
+    20:
+        title: 'Parrot bay 3'
+        subtitle: 'Killed 20 parrots'
+        xp: 30
+        commands: {}
+    30:
+        title: 'Parrot bay 4'
+        subtitle: 'Killed 30 parrots'
+        xp: 30
+        commands: {}
+    40:
+        title: 'Parrot bay 5'
+        subtitle: 'Killed 40 parrots'
+        xp: 40
+        commands: {}
+PIG:
+    1:
+        title: 'Bringing home the bacon'
+        subtitle: 'Killed 1 pig'
+        xp: 20
+        commands: {}
+    10:
+        title: 'Got bacon?'
+        subtitle: 'Killed 10 pigs'
+        xp: 20
+        commands: {}
+    20:
+        title: 'Ham u lot'
+        subtitle: 'Killed 20 pigs'
+        xp: 30
+        commands: {}
+    30:
+        title: 'Pork farmer'
+        subtitle: 'Killed 30 pigs'
+        xp: 40
+        commands: {}
+    40:
+        title: 'Pork factory'
+        subtitle: 'Killed 40 pigs'
+        xp: 50
+        commands: {}
+PIG_ZOMBIE:
+    1:
+        title: 'Pig redeamer'
+        subtitle: 'Killed 1 Zombie Pigman'
+        xp: 20
+        commands: {}
+    10:
+        title: 'Pig redeamer 2'
+        subtitle: 'Killed 10 Zombie Pigmen'
+        xp: 20
+        commands: {}
+    20:
+        title: 'Pig redeamer 3'
+        subtitle: 'Killed 20 Zombie Pigmen'
+        xp: 20
+        commands: {}
+    30:
+        title: 'Pig redeamer 4'
+        subtitle: 'Killed 30 Zombie Pigmen'
+        xp: 50
+        commands: {}
+    40:
+        title: 'Pig redeamer 5'
+        subtitle: 'Killed 40 Zombie Pigmen'
+        xp: 50
+        commands: {}
+PLAYER:
+    1:
+        title: 'Victor'
+        subtitle: 'Killed 1 other player'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Gladator'
+        subtitle: 'Killed 10 other players'
+        xp: 30
+        commands: {}
+    20:
+        title: 'Legionaire'
+        subtitle: 'Killed 20 other players'
+        xp: 40
+        commands: {}
+    30:
+        title: 'Knight of the square table'
+        subtitle: 'Killed 30 other players'
+        xp: 50
+        commands: {}
+    40:
+        title: 'King of the hill'
+        subtitle: 'Killed 40 other players'
+        xp: 60
+        commands: {}
+POLAR_BEAR:
+    1:
+        title: 'First polar bear'
+        subtitle: 'Killed 1 polar bear'
+        xp: 20
+        commands: {}
+    10:
+        title: 'Hunting the preditor'
+        subtitle: 'Killed 10 polar bears'
+        xp: 30
+        commands: {}
+    20:
+        title: 'Got bear pellets?'
+        subtitle: 'Killed 20 polar bears'
+        xp: 40
+        commands: {}
+    30:
+        title: 'Stocking up on polar bear drops'
+        subtitle: 'Killed 30 polar bears'
+        xp: 50
+        commands: {}
+    40:
+        title: 'Taking out 40 polar bears'
+        subtitle: 'Killed 40 polar bears'
+        xp: 60
+        commands: {}
+RABBIT:
+    1:
+        title: 'One little rabbits'
+        subtitle: 'Killed 1 rabbit'
+        xp: 20
+        commands: {}
+    10:
+        title: 'Shh! I am hunting rabbit'
+        subtitle: 'killed 10 rabbits'
+        xp: 30
+        commands: {}
+    20:
+        title: 'Rabbit Hunter'
+        subtitle: 'Killed 20 rabbits'
+        xp: 40
+        commands: {}
+    30:
+        title: 'Rabbit Hunter 2'
+        subtitle: 'Killed 30 rabbits'
+        xp: 50
+        commands: {}
+    40:
+        title: 'Rabbit Hunter 3'
+        subtitle: 'Killed 40 rabbits'
+        xp: 60
+        commands: {}
+SHEEP:
+    1:
+        title: 'First Sheep'
+        subtitle: 'Killed 1 sheep'
+        xp: 20
+        commands: {}
+    10:
+        title: 'Counting sheep'
+        subtitle: 'Killed 10 sheep'
+        xp: 30
+        commands: {}
+    20:
+        title: 'Counting sheep 2'
+        subtitle: 'Killed 20 sheep'
+        xp: 40
+        commands: {}
+    30:
+        title: 'Counting sheep 3'
+        subtitle: 'Killed 30 sheep'
+        xp: 50
+        commands: {}
+    40:
+        title: 'Counting sheep 4'
+        subtitle: 'Killed 40 sheep'
+        xp: 60
+        commands: {}
+SHULKER:
+    1:
+        title: 'Unboxing A Shulkar'
+        subtitle: 'Killed 1 shulker'
+        xp: 100
+        commands: {}
+    10:
+        title: 'Unboxing 10 Shulkers'
+        subtitle: 'Killed 10 shulkers'
+        xp: 200
+        commands: {}
+    20:
+        title: 'Unboxing 20 Shulkers'
+        subtitle: 'Killed 20 shulkers'
+        xp: 300
+        commands: {}
+SILVERFISH:
+    1:
+        title: 'First Silverfish'
+        subtitle: 'Killed 1 silverfish'
+        xp: 100
+        commands: {}
+    10:
+        title: 'Bug Exterminator'
+        subtitle: 'Killed 10 silverfish'
+        xp: 200
+        commands: {}
+SKELETON:
+    1:
+        title: 'Bone Rattler'
+        subtitle: 'Killed 1 skeleton'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Bone Rattler 2'
+        subtitle: 'Killed 10 skeletons'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Bone Rattler 3'
+        subtitle: 'Killed 20 skeletons'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Bone Rattler 4'
+        subtitle: 'Killed 30 skeletons'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Bone Rattler 5'
+        subtitle: 'Killed 40 skeletons'
+        xp: 10
+        commands: {}
+SKELETON_HORSE:
+    1:
+        title: 'One Skeleton Horse'
+        subtitle: 'Killed 1 Skeleton Horse'
+        xp: 100
+        commands: {}
+    2:
+        title: 'Two Skeleton Horses'
+        subtitle: 'Killed 2 Skeleton Horses'
+        xp: 200
+        commands: {}
+    3:
+        title: 'Three Skeleton Horses'
+        subtitle: 'Killed 20 Skeleton Horses'
+        xp: 300
+        commands: {}
+SLIME:
+    1:
+        title: 'Playing with jello'
+        subtitle: 'Killed 1 slime'
+        xp: 10
+        commands: {}
+    10:
+        title: 'J.E.L.L.O'
+        subtitle: 'Killed 10 smiles'
+        xp: 20
+        commands: {}
+    20:
+        title: 'Getting Jiggly'
+        subtitle: 'Killed 20 slimes'
+        xp: 30
+        commands: {}
+SPIDER:
+    1:
+        title: 'Taking care of a sticky situation'
+        subtitle: 'Killed 1 spider'
+        xp: 20
+        commands: {}
+    10:
+        title: 'Taking care of a sticky situation 2'
+        subtitle: 'Killed 10 spiders'
+        xp: 20
+        commands: {}
+    20:
+        title: 'Taking care of a sticky situation 3'
+        subtitle: 'Killed 20 spiders'
+        xp: 20
+        commands: {}
+    30:
+        title: 'Taking care of a sticky situation 4'
+        subtitle: 'Killed 30 spiders'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Taking care of a sticky situation 5'
+        subtitle: 'Killed 40 spiders'
+        xp: 10
+        commands: {}
+SQUID:
+    1:
+        title: 'Getting ink saks'
+        subtitle: 'Killed 1 squid'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Getting ink saks 2'
+        subtitle: 'Killed 10 squids'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Getting ink saks 3'
+        subtitle: 'Killed 20 squids'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Getting ink saks 4'
+        subtitle: 'Killed 30 squid'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Getting ink saks 5'
+        subtitle: 'Killed 40 squid'
+        xp: 10
+        commands: {}
+VILLAGER:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+WITCH:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+WITHER:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+WITHER_SKELETON:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+WOLF:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+ZOMBIE:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+ZOMBIE_HORSE:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
+ZOMBIE_VILLAGER:
+    1:
+        title: 'Putting out 1 blaze'
+        subtitle: 'Killed 1 blaze'
+        xp: 10
+        commands: {}
+    10:
+        title: 'Putting out 10 blazes'
+        subtitle: 'Killed 10 blazes'
+        xp: 10
+        commands: {}
+    20:
+        title: 'Putting out 20 blazes'
+        subtitle: 'Killed 20 blazes'
+        xp: 10
+        commands: {}
+    30:
+        title: 'Putting out 30 blazes'
+        subtitle: 'Killed 30 blazes'
+        xp: 10
+        commands: {}
+    40:
+        title: 'Putting out 40 blazes'
+        subtitle: 'Killed 40 blazes'
+        xp: 10
+        commands: {}
