@@ -81,36 +81,38 @@ public class Levels {
 
     public void checkStatus(Player player) {
         try {
-            ResultSet info = db.query("SELECT * FROM " + config.getPrefix() + "Players WHERE Name = '" + player.getName() + "'");
-            if (info.first()) {
-                ResultSet xpr = db.query("SELECT sum(xp) FROM " + config.getPrefix() + "Achievements WHERE UID = " + info.getInt("UID") + ";");
-                xpr.first();
-                int currentXP = xpr.getInt(1);
-                xpr.close();
+            if (!player.hasPermission("jachievements.exempt")) {
+                ResultSet info = db.query("SELECT * FROM " + config.getPrefix() + "Players WHERE Name = '" + player.getName() + "'");
+                if (info.first()) {
+                    ResultSet xpr = db.query("SELECT sum(xp) FROM " + config.getPrefix() + "Achievements WHERE UID = " + info.getInt("UID") + ";");
+                    xpr.first();
+                    int currentXP = xpr.getInt(1);
+                    xpr.close();
 
-                Integer level = info.getInt("Level");
-                if (lconfig.contains(level.toString())) {
-                    xp = this.getRequiredXP(level);
-                    commands = this.getCommands(level);
-                    name = this.getName(level);
-                }
-                int nextLevel = level + 1;
-                int nextXP = 0;
-                String nextName = null;
-                List<String> nextCommands = new ArrayList<>();
-                if (lconfig.contains("" + nextLevel)) {
-                    nextXP = this.getRequiredXP(nextLevel);
-                    nextName = this.getName(nextLevel);
-                    nextCommands = this.getCommands(nextLevel);
+                    Integer level = info.getInt("Level");
+                    if (lconfig.contains(level.toString())) {
+                        xp = this.getRequiredXP(level);
+                        commands = this.getCommands(level);
+                        name = this.getName(level);
+                    }
+                    int nextLevel = level + 1;
+                    int nextXP = 0;
+                    String nextName = null;
+                    List<String> nextCommands = new ArrayList<>();
+                    if (lconfig.contains("" + nextLevel)) {
+                        nextXP = this.getRequiredXP(nextLevel);
+                        nextName = this.getName(nextLevel);
+                        nextCommands = this.getCommands(nextLevel);
 
-                    if (currentXP >= nextXP) {
-                        db.query("UPDATE " + config.getPrefix() + "Players SET Level = '" + nextLevel + "' WHERE UID = " + info.getInt("UID"));
-                        for (String command : nextCommands) {
-                            plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                        if (currentXP >= nextXP) {
+                            db.query("UPDATE " + config.getPrefix() + "Players SET Level = '" + nextLevel + "' WHERE UID = " + info.getInt("UID"));
+                            for (String command : nextCommands) {
+                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                            }
+                            plugin.log.info(player.getName() + " was leveled up to " + nextName);
+                            player.sendMessage(ChatColor.BOLD + "Your have have been leveled up to " + nextName);
+                            player.sendTitle(ChatColor.GOLD + "Your now a " + nextName, ChatColor.BLUE + "Keep up the hard work!", 20, 90, 20);
                         }
-                        plugin.log.info(player.getName() + " was leveled up to " + nextName);
-                        player.sendMessage(ChatColor.BOLD + "Your have have been leveled up to " + nextName);
-                        player.sendTitle(ChatColor.GOLD + "Your now a " + nextName, ChatColor.BLUE + "Keep up the hard work!", 20, 90, 20);
                     }
                 }
             }

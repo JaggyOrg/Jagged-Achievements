@@ -3,20 +3,15 @@ main: org.jaggy.jaggedachievements.spigot.Jagged
 version: 1.2-SNAPSHOT
 author: Quirkylee, Markjat
 
-commands:
-    achievements:
-        description: Achievements Command
-        aliases:
-            - ach
-        usage: /<command>
-        permission: jachievements.user
-
 permissions:
     jachievements.user:
         description: Allows user to use Jagged Achievements.
         default: true
     jachievements.mod:
         description: Allows access to mod commands
+        default: op
+    jachievements.exempt:
+        description: exempts user from leveling
         default: op
     jachievements.admin:
         description: Allows access to admin commands
