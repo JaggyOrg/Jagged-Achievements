@@ -10,23 +10,23 @@
 
     <groupId>org.jaggy</groupId>
     <artifactId>JaggedAchievements</artifactId>
-    <version>1.0${revision}</version>
+    <version>1.2${revision}</version>
     <packaging>jar</packaging>
     <description>JaggedAchievements</description>
 
     <name>JaggedAchievements</name>
-    <url>http://github.com:paradoxical-io/JaggedAchievements</url>
+    <url>http://github.com:JaggyOrg/JaggedAchievements</url>
 
     <licenses>
         <license>
-            <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <name>GNU GENERAL PUBLIC LICENSE, Version 3.0</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <properties>
-        <revision>-SNAPSHOT</revision>
+        <revision>-RELEASE</revision>
         <junit.version>4.12</junit.version>
         <java.version>1.8</java.version>
         <maven.compiler.plugin.version>3.0</maven.compiler.plugin.version>
