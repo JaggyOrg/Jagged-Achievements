@@ -82,7 +82,7 @@ public class EntityEvents implements Listener {
 
                     if (commands.iterator().hasNext()) {
                         commands.forEach((command) -> {
-                            plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                            plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player", player.getName()));
                         });
                     }
                     plugin.levels.checkStatus(player);

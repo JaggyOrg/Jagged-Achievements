@@ -107,7 +107,7 @@ public class Levels {
                         if (currentXP >= nextXP) {
                             db.query("UPDATE " + config.getPrefix() + "Players SET Level = '" + nextLevel + "' WHERE UID = " + info.getInt("UID"));
                             for (String command : nextCommands) {
-                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player", player.getName()));
                             }
                             plugin.log.info(player.getName() + " was leveled up to " + nextName);
                             player.sendMessage(ChatColor.BOLD + "Your have have been leveled up to " + nextName);

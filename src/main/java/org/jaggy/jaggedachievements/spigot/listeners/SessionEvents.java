@@ -96,7 +96,7 @@ public class SessionEvents implements Listener {
                                 +"3, "+xp+", '"+config.getServerName()+"')");
                         if(commands.iterator().hasNext()) {
                             for(String command: commands) {
-                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player", player.getName()));
                             }
                         }
                         plugin.levels.checkStatus(player);
@@ -158,7 +158,7 @@ public class SessionEvents implements Listener {
                                 +"3, "+xp+", '"+config.getServerName()+"')");
                         if(commands.iterator().hasNext()) {
                             for(String command: commands) {
-                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+                                plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player", player.getName()));
                             }
                         }
                         plugin.levels.checkStatus(player);
