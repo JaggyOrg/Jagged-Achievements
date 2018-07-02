@@ -73,7 +73,7 @@ public class Achievements implements CommandExecutor {
                 if (data.first()) {
                     ResultSet result = db.query("SELECT * FROM " + config.getPrefix() + "Achievements WHERE UID ='" + data.getInt(1) 
                             + "' ORDER BY eventtime DESC LIMIT 10");
-                    plugin.cmds.sendMessage(sender, ChatColor.AQUA + "" + ChatColor.UNDERLINE + "Your Past 10 Achievements:");
+                    plugin.cmds.sendMessage(sender, ChatColor.AQUA + "" + "Your Past 10 Achievements:");
                     while (result.next()) {
                         String type = "";
                         switch (result.getInt("EventType")) {
