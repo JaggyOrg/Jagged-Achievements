@@ -69,6 +69,7 @@ public class SessionEvents implements Listener {
                     db.query("INSERT INTO "+config.getPrefix()+"PlayerEvents (UID, Location, EventType, Server) " +
                             "VALUES ('"+data.getInt("UID")+"', '"+player.getLocation()+"', 0, '"+config.getServerName()+"')");
                 } else {
+                    
                     db.query("INSERT INTO "+config.getPrefix()+"Players (Server, Name) VALUES ('"+config.getServerName()+"', '"+player.getName()+"');");
                     data = db.query("SELECT * FROM "+config.getPrefix()+"Players WHERE Name ='"+player.getName()+"'");
                     data.first();
@@ -98,6 +99,7 @@ public class SessionEvents implements Listener {
                                 plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
                             }
                         }
+                        plugin.levels.checkStatus(player);
                     }
                 }
             } catch (SQLException ex) {
@@ -159,6 +161,7 @@ public class SessionEvents implements Listener {
                                 plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
                             }
                         }
+                        plugin.levels.checkStatus(player);
                     }
                 }
             } catch (SQLException ex) {

@@ -1,8 +1,8 @@
 #
-# Jagged Achievements Block Break File
+# Jagged Achievements Block Destroy File
 #
 
-# Copyright (C) 20108 Quirkylee
+# Copyright (C) 2018 Quirkylee
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,630 +20,491 @@
 
 ######################################
 #                                    #
-# Break Achievements                 #
+# Breaking Achievements              #
 #                                    #
 ######################################
 DIRT:
     10:
-        title: 'Digging In A Hole'
-        subtitle: 'Breaked 10 dirt blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'Digging In A Ditch'
-        subtitle: 'Breaked 50 dirt blocks'
+        title: 'Dirt Cleaner'
+        subtitle: 'Broke 10 dirt blocks'
         xp: 10
         commands: {}
     100:
-        title: 'Got Dirt?'
-        subtitle: 'Breaked 100 dirt blocks'
+        title: 'Dirt Remover'
+        subtitle: 'Broke 100 dirt blocks'
         xp: 10
         commands: {}
     500:
-        title: '500 blocks under the sea'
-        subtitle: 'Breaked 500 dirt blocks'
-        xp: 50
+        title: 'Janitor Of Dirt'
+        subtitle: 'Broke 500 dirt blocks'
+        xp: 10
         commands: {}
     1000:
-        title: 'Finding A Use For Dirt'
-        subtitle: 'Placed 1000 dirt blocks'
-        xp: 100
-        commands: {}
-    5000:
-        title: 'We Need More Dirt'
-        subtitle: 'Placed 5,000 dirt blocks'
-        xp: 150
-        commands: {}
-    10000:
-        title: 'Filling in the Grand Cayon'
-        subtitle: 'Placed 10,000 dirt blocks'
-        xp: 200
-        commands: {}
-    100000:
-        title: 'Building A Mountian'
-        subtitle: 'Placed 100,000 dirt blocks'
-        xp: 200
-        commands: {}
-    10000000:
-        title: 'God of Dirt'
-        subtitle: 'Placed a million dirt blocks'
-        xp: 300
-        commands: {}
-
-COBBLESTONE:
-    10:
-        title: 'Throwing Some Stones'
-        subtitle: 'Placed 10 cobblestone blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'Between a Rock and Another Rock'
-        subtitle: 'Placed 50 cobblestone blocks'
-        xp: 10
-        commands: {}
-    100:
-        title: 'Building A Small Quarry'
-        subtitle: 'Placed 100 cobblestone blocks'
-        xp: 10
-        commands: {}
-    500:
-        title: 'I Like Cobblestone'
-        subtitle: 'Placed 500 cobblestone blocks'
+        title: 'Dirt Hater'
+        subtitle: 'Broke 1000 dirt blocks'
         xp: 50
         commands: {}
-    1000:
-        title: 'Finding A Use For Cobblestone'
-        subtitle: 'Placed 1,000 cobblestone blocks'
+    5000:
+        title: 'Find A Use Without Dirt'
+        subtitle: 'Broke 5000 dirt blocks'
         xp: 100
         commands: {}
-    5000:
-        title: 'Building A Small Castle'
-        subtitle: 'Placed 5,000 cobblestone blocks'
+    50000:
+        title: 'Removing A Mountain Of Dirt'
+        subtitle: 'Broke 50000 dirt blocks'
         xp: 150
         commands: {}
-    10000:
-        title: 'Gosh, 10,000 Cobblestone?'
-        subtitle: 'Placed 10,000 cobblestone blocks'
-        xp: 200
-        commands: {}
     100000:
-        title: 'Cobblestone Bridge Of The Galaxy'
-        subtitle: 'Placed 100,000 cobblestone blocks'
+        title: 'Emptying The World Of Dirt'
+        subtitle: 'Broke 100000 dirt blocks'
         xp: 200
         commands: {}
     1000000:
-        title: 'God of Cobblestone'
-        subtitle: 'Placed a million cobblestone blocks'
+        title: 'Dirt Destroyer'
+        subtitle: 'Broke 1 million dirt blocks'
+        xp: 200
+        commands: {}
+    5000000:
+        title: 'Extinction Of Dirt'
+        subtitle: 'Broke 5 million dirt blocks'
+        xp: 300
+        commands: {}
+        
+COBBLESTONE:
+    10:
+        title: 'Cobble Sweeper'
+        subtitle: 'Broke 10 cobble blocks'
+        xp: 10
+        commands: {}
+    100:
+        title: 'Cobble Chucker'
+        subtitle: 'Broke 100 cobble blocks'
+        xp: 10
+        commands: {}
+    500:
+        title: 'Miner Of Cobble'
+        subtitle: 'Broke 500 cobble blocks'
+        xp: 10
+        commands: {}
+    1000:
+        title: 'Cobble Hater'
+        subtitle: 'Broke 1000 cobble blocks'
+        xp: 50
+        commands: {}
+    5000:
+        title: 'Find A Use Without Cobble'
+        subtitle: 'Broke 5000 cobble blocks'
+        xp: 100
+        commands: {}
+    50000:
+        title: 'Blowing Up A Mountain'
+        subtitle: 'Broke 50000 cobble blocks'
+        xp: 150
+        commands: {}
+    100000:
+        title: 'Emptying A World Of Cobble'
+        subtitle: 'Broke 100000 cobble blocks'
+        xp: 200
+        commands: {}
+    1000000:
+        title: 'Cobble Destroyer'
+        subtitle: 'Broke 1 million cobble blocks'
+        xp: 200
+        commands: {}
+    5000000:
+        title: 'Extinction of Cobble'
+        subtitle: 'Broke 5 million cobble blocks'
         xp: 300
         commands: {}
 
 WOOD:
     10:
-        title: 'Picking Up Sticks'
-        subtitle: 'Placed 10 wood blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'Chopping Down Trees'
-        subtitle: 'Placed 50 wood blocks'
+        title: 'Wood Chopper'
+        subtitle: 'Broke 10 wood plank blocks'
         xp: 10
         commands: {}
     100:
-        title: 'Building a Table'
-        subtitle: 'Placed 100 wood blocks'
+        title: 'Plank Puller'
+        subtitle: 'Broke 100 wood plank blocks'
         xp: 10
         commands: {}
     500:
-        title: 'Building A Fence'
-        subtitle: 'Placed 500 wood blocks'
-        xp: 50
+        title: 'Wood Burner'
+        subtitle: 'Broke 500 wood plank blocks'
+        xp: 10
         commands: {}
     1000:
-        title: 'Building A Cabin'
-        subtitle: 'Placed 1,000 wood blocks'
-        xp: 100
+        title: 'Wood Hater'
+        subtitle: 'Broke 1000 wood plank blocks'
+        xp: 50
         commands: {}
     5000:
-        title: 'Master Lumberman'
-        subtitle: 'Placed 5,000 wood blocks'
+        title: 'Find A Use Without Wood '
+        subtitle: 'Broke 5000 wood plank blocks'
+        xp: 100
+        commands: {}
+    50000:
+        title: 'Trimming A Mountain Of Wood '
+        subtitle: 'Broke 50000 wood plank blocks'
         xp: 150
         commands: {}
-    10000:
-        title: 'What Do I Do With All This Wood?'
-        subtitle: 'Placed 10,000 wood blocks'
-        xp: 200
-        commands: {}
     100000:
-        title: 'God of Wood'
-        subtitle: 'Placed 100,000 wood blocks'
+        title: 'Emptying A World Of Wood'
+        subtitle: 'Broke 100000 wood plank blocks'
         xp: 200
         commands: {}
     1000000:
-        title: 'God of Wood'
-        subtitle: 'Placed a million wood blocks'
+        title: 'Wood Destroyer'
+        subtitle: 'Broke 1 million wood plank blocks'
+        xp: 200
+        commands: {}
+    5000000:
+        title: 'Extinction of Wood'
+        subtitle: 'Broke 5 million wood plank blocks'
         xp: 300
         commands: {}
-STONE:       
+LOG:
     10:
-        title: 'Digging at Stones'
-        subtitle: 'Placed 10 stone blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'Stone Maker'
-        subtitle: 'Placed 50 stone blocks'
+        title: 'Tree Chopper'
+        subtitle: 'Broke 10 log blocks'
         xp: 10
         commands: {}
     100:
-        title: 'Stone Blaster'
-        subtitle: 'Placed 100 stone blocks'
+        title: 'Wood Chipper'
+        subtitle: 'Broke 100 log blocks'
         xp: 10
         commands: {}
     500:
-        title: 'I Like Rocks'
-        subtitle: 'Placed 500 stone blocks'
-        xp: 50
+        title: 'Lumberman'
+        subtitle: 'Broke 500 log blocks'
+        xp: 10
         commands: {}
     1000:
-        title: 'Finding A Use For Stone'
-        subtitle: 'Placed 1,000 stone blocks'
-        xp: 100
+        title: 'Log Hater'
+        subtitle: 'Broke 1000 log blocks'
+        xp: 50
         commands: {}
     5000:
-        title: 'Building A Small Castle'
-        subtitle: 'Placed 5,000 cobblestone blocks'
+        title: 'Find A Use Without Logs'
+        subtitle: 'Broke 5000 log blocks'
+        xp: 100
+        commands: {}
+    50000:
+        title: 'Chopping Down A Mountain'
+        subtitle: 'Broke 50000 log blocks'
         xp: 150
         commands: {}
-    10000:
-        title: 'How much Stone is too much Stone?'
-        subtitle: 'Placed 10,000 cobblestone blocks'
-        xp: 200
-        commands: {}
     100000:
-        title: 'Stone Bridge Of The Galaxy'
-        subtitle: 'Placed 100,000 cobblestone blocks'
+        title: 'Emptying A World Of Logs'
+        subtitle: 'Broke 100000 log blocks'
         xp: 200
         commands: {}
     1000000:
-        title: 'God of Stone'
-        subtitle: 'Placed a million cobblestone blocks'
+        title: 'Log Destroyer'
+        subtitle: 'Broke 1 million log blocks'
+        xp: 200
+        commands: {}
+    5000000:
+        title: 'Extinction of Logs'
+        subtitle: 'Broke 5 million log blocks'
         xp: 300
         commands: {}
 
 WOOL:
     10:
-        title: 'Cutting Some Wool'
-        subtitle: 'Placed 10 cobblestone block'
-        xp: 10
-        commands: {}
-    50:
-        title: 'A Bed Of Wool'
-        subtitle: 'Placed 50 cobblestone blocks'
+        title: 'Wool Breaker'
+        subtitle: 'Broke 10 wool blocks'
         xp: 10
         commands: {}
     100:
-        title: 'Wool Farmer'
-        subtitle: 'Placed 100 cobblestone blocks'
+        title: 'Wool Burner'
+        subtitle: 'Broke 100 wool blocks'
         xp: 10
         commands: {}
     500:
-        title: 'Using A Ton Of Wool'
-        subtitle: 'Placed 500 cobblestone blocks'
-        xp: 50
+        title: 'Wool Tearer'
+        subtitle: 'Broke 500 wool blocks'
+        xp: 10
         commands: {}
     1000:
-        title: 'Wooly Giant (Rat)'
-        subtitle: 'Placed 1,000 cobblestone blocks'
-        xp: 100
+        title: 'Wool Hater'
+        subtitle: 'Broke 1000 wool blocks'
+        xp: 50
         commands: {}
     5000:
-        title: 'A Mountain Of Wool'
-        subtitle: 'Placed 5,000 cobblestone blocks'
+        title: 'Find A Use Without Wool'
+        subtitle: 'Broke 5000 wool blocks'
+        xp: 100
+        commands: {}
+    50000:
+        title: 'Stripping A Mountain Of Wool'
+        subtitle: 'Broke 50000 wool blocks'
         xp: 150
         commands: {}
-    10000:
-        title: 'The Wool Company'
-        subtitle: 'Placed 10,000 cobblestone blocks'
-        xp: 200
-        commands: {}
     100000:
-        title: 'A Planet Full Of Wool'
-        subtitle: 'Placed 100,000 cobblestone blocks'
+        title: 'Emptying A World Of Wool'
+        subtitle: 'Broke 100000 wool blocks'
         xp: 200
         commands: {}
     1000000:
-        title: 'God of Wool'
-        subtitle: 'Placed a million cobblestone blocks'
+        title: 'Wool Destroyer'
+        subtitle: 'Broke 1 million wool blocks'
+        xp: 200
+        commands: {}
+    5000000:
+        title: 'Extinction of Wool'
+        subtitle: 'Broke 5 million wool blocks'
         xp: 300
         commands: {}
 
 CONCRETE:
     10:
-        title: 'Concrete Mixer'
-        subtitle: 'Placed 10 concrete blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'When Stone And Water Combine'
-        subtitle: 'Placed 50 concrete blocks'
+        title: 'Concrete Ruiner'
+        subtitle: 'Broke 10 concrete blocks'
         xp: 10
         commands: {}
     100:
-        title: 'Truck Of Concrete'
-        subtitle: 'Placed 100 concrete blocks'
+        title: 'Concrete Remover'
+        subtitle: 'Broke 100 concrete blocks'
         xp: 10
         commands: {}
     500:
-        title: 'You are Like A Factory'
-        subtitle: 'Placed 500 concrete blocks'
-        xp: 50
+        title: 'Stripping A Road'
+        subtitle: 'Broke 500 concrete blocks'
+        xp: 10
         commands: {}
     1000:
-        title: "City Block's Worth"
-        subtitle: 'Placed 1,000 concrete blocks'
-        xp: 100
+        title: 'Concrete Hater'
+        subtitle: 'Broke 1000 concrete blocks'
+        xp: 50
         commands: {}
     5000:
-        title: 'Concretetron 5000'
-        subtitle: 'Placed 5,000 concrete blocks'
+        title: 'Find A Use Without Concrete'
+        subtitle: 'Broke 5000 concrete blocks'
+        xp: 100
+        commands: {}
+    50000:
+        title: 'Paving Over A Mountain'
+        subtitle: 'Broke 50000 concrete blocks'
         xp: 150
         commands: {}
-    10000:
-        title: 'Not Enough Concrete'
-        subtitle: 'Placed 10,000 concrete blocks'
-        xp: 200
-        commands: {}
     100000:
-        title: 'So. Much. Concrete.'
-        subtitle: 'Placed 100,000 concrete blocks'
+        title: 'Emptying A World Of Concrete'
+        subtitle: 'Broke 100000 concrete blocks'
         xp: 200
         commands: {}
     1000000:
-        title: 'God of Concrete'
-        subtitle: 'Placed a million concrete blocks'
+        title: 'Concrete Destroyer'
+        subtitle: 'Broke 1 million concrete blocks'
+        xp: 200
+        commands: {}
+    5000000:
+        title: 'Extinction of Concrete'
+        subtitle: 'Broke 5 million concrete blocks'
         xp: 300
         commands: {}
         
 QUARTZ_BLOCK:
     10:
-        title: 'Where Did You Find These?'
-        subtitle: 'Placed 10 quartz blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'No Shortage of Quartz'
-        subtitle: 'Placed 50 quartz blocks'
+        title: 'Quartz Breaker'
+        subtitle: 'Broke 10 quartz blocks'
         xp: 10
         commands: {}
     100:
-        title: 'White Rock From a Red Place'
-        subtitle: 'Placed 100 quartz blocks'
+        title: 'Quartz Melter'
+        subtitle: 'Broke 100 quartz blocks'
         xp: 10
         commands: {}
     500:
-        title: 'I Like Quartz'
-        subtitle: 'Placed 500 quartz blocks'
-        xp: 50
+        title: 'Miner Of Quartz'
+        subtitle: 'Broke 500 quartz blocks'
+        xp: 10
         commands: {}
     1000:
-        title: 'The Usage Of Quartz'
-        subtitle: 'Placed 1,000 quartz blocks'
-        xp: 100
+        title: 'Quartz Hater'
+        subtitle: 'Broke 1000 quartz blocks'
+        xp: 50
         commands: {}
     5000:
-        title: 'The Pretty White Stone'
-        subtitle: 'Placed 5,000 quartz blocks'
+        title: 'Find A Use Without Quartz'
+        subtitle: 'Broke 5000 quartz blocks'
+        xp: 100
+        commands: {}
+    50000:
+        title: 'Dropping All Da Quartz'
+        subtitle: 'Broke 50000 quartz blocks'
         xp: 150
         commands: {}
-    10000:
-        title: 'An Abundance Of Quartz'
-        subtitle: 'Placed 10,000 quartz blocks'
-        xp: 200
-        commands: {}
     100000:
-        title: 'Enough Quartz to Empty The Nether'
-        subtitle: 'Placed 100,000 quartz blocks'
+        title: 'Emptying A World Of Quartz'
+        subtitle: 'Broke 100000 quartz blocks'
         xp: 200
         commands: {}
     1000000:
-        title: 'God of Quartz'
-        subtitle: 'Placed a million quartz blocks'
-        xp: 300
-        commands: {}
-SANDSTONE:
-    10:
-        title: 'We Got Some Sandstone'
-        subtitle: 'Placed 10 sandstone blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'Even More Sandstone'
-        subtitle: 'Placed 50 sandstone blocks'
-        xp: 10
-        commands: {}
-    100:
-        title: 'Got A Lot Of Sandstone'
-        subtitle: 'Placed 100 sandstone blocks'
-        xp: 10
-        commands: {}
-    500:
-        title: 'Enough Sandstone for a Village'
-        subtitle: 'Placed 500 sandstone blocks'
-        xp: 50
-        commands: {}
-    1000:
-        title: 'Temple of Sandstone'
-        subtitle: 'Placed 1,000 sandstone blocks'
-        xp: 100
-        commands: {}
-    5000:
-        title: 'A Sea Of Sandstone'
-        subtitle: 'Placed 5,000 sandstone blocks'
-        xp: 150
-        commands: {}
-    10000:
-        title: 'Sandstone Beneath The Sahara'
-        subtitle: 'Placed 10,000 sandstone blocks'
+        title: 'Quartz Destroyer'
+        subtitle: 'Broke 1 million quartz blocks'
         xp: 200
         commands: {}
-    100000:
-        title: 'Enough Sandstone for the World!'
-        subtitle: 'Placed 100,000 sandstone blocks'
-        xp: 200
-        commands: {}
-    1000000:
-        title: 'God of Sandstone'
-        subtitle: 'Placed a million sandstone blocks'
+    5000000:
+        title: 'Extinction of Quartz'
+        subtitle: 'Broke 5 million quartz blocks'
         xp: 300
         commands: {}
         
-GLASS:
-    10:
-        title: 'Enough To Poke Your Eye Out!'
-        subtitle: 'Placed 10 glass blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'Glass Statue'
-        subtitle: 'Placed 50 glass blocks'
-        xp: 10
-        commands: {}
-    100:
-        title: 'Glass Museum'
-        subtitle: 'Placed 100 glass blocks'
-        xp: 10
-        commands: {}
-    500:
-        title: 'Glass Temple'
-        subtitle: 'Placed 500 glass blocks'
-        xp: 50
-        commands: {}
-    1000:
-        title: 'Finding A Use For Breakables'
-        subtitle: 'Placed 1,000 glass blocks'
-        xp: 100
-        commands: {}
-    5000:
-        title: 'A Glassy Place'
-        subtitle: 'Placed 5,000 glass blocks'
-        xp: 150
-        commands: {}
-    10000:
-        title: "What's All This Glass For?"
-        subtitle: 'Placed 10,000 glass blocks'
-        xp: 200
-        commands: {}
-    100000:
-        title: 'Rainbow Glass Bridge'
-        subtitle: 'Placed 100,000 glass blocks'
-        xp: 200
-        commands: {}
-    1000000:
-        title: 'God of Glass'
-        subtitle: 'Placed a million glass blocks'
-        xp: 300
-        commands: {}
-        
-SMOOTH_BRICK:
-    10:
-        title: 'Better Looking Stone'
-        subtitle: 'Placed 10 glass blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'Stone Brick Creator'
-        subtitle: 'Placed 50 glass blocks'
-        xp: 10
-        commands: {}
-    100:
-        title: 'More Stone Bricks'
-        subtitle: 'Placed 100 glass blocks'
-        xp: 10
-        commands: {}
-    500:
-        title: 'Even More Stone Bricks'
-        subtitle: 'Placed 500 glass blocks'
-        xp: 50
-        commands: {}
-    1000:
-        title: 'Where Are You Getting All This Stone Brick?'
-        subtitle: 'Placed 1,000 glass blocks'
-        xp: 100
-        commands: {}
-    5000:
-        title: 'The Stone Brick Land'
-        subtitle: 'Placed 5,000 glass blocks'
-        xp: 150
-        commands: {}
-    10000:
-        title: '(Stone) Brick Break'
-        subtitle: 'Placed 10,000 glass blocks'
-        xp: 200
-        commands: {}
-    100000:
-        title: 'Enough To Build A Kingdom'
-        subtitle: 'Placed 100,000 glass blocks'
-        xp: 200
-        commands: {}
-    1000000:
-        title: 'God of Stone Bricks'
-        subtitle: 'Placed a million glass blocks'
-        xp: 300
-        commands: {}
 STEP:
-    5:
-        title: 'One Small Step...'
-        subtitle: 'Placed 5 stair blocks'
-        xp: 10
-        commands: {}
-    50:
-        title: 'Stepping It Up'
-        subtitle: 'Placed 50 stair blocks'
+    10:
+        title: 'Stair Sweeper'
+        subtitle: 'Broke 10 stair blocks'
         xp: 10
         commands: {}
     100:
-        title: 'Stepping Stones'
-        subtitle: 'Placed 100 stair blocks'
+        title: 'Stair Stomper'
+        subtitle: 'Broke 100 stair blocks'
         xp: 10
         commands: {}
-    300:
-        title: 'Stairs, Stairs, Stairs..'
-        subtitle: 'Placed 300 stair blocks'
+    500:
+        title: 'Breaker Of Stairs'
+        subtitle: 'Broke 500 stair blocks'
+        xp: 10
+        commands: {}
+    1000:
+        title: 'Stair Hater'
+        subtitle: 'Broke 1000 stair blocks'
         xp: 50
         commands: {}
-    800:
-        title: 'Dare Climb These Stairs?'
-        subtitle: 'Placed 8000 stair blocks'
+    5000:
+        title: 'Find A Use Without Stairs'
+        subtitle: 'Broke 5000 stair blocks'
         xp: 100
         commands: {}
-    1400:
-        title: 'Would an Escalator Be Better?'
-        subtitle: 'Placed 1,400 stair blocks'
+    50000:
+        title: 'Knocking Down A Mountain Of Stairs'
+        subtitle: 'Broke 50000 stair blocks'
         xp: 150
         commands: {}
-    3000:
-        title: 'Climbing a Mountain of Steps'
-        subtitle: 'Placed 3,000 stair blocks'
+    100000:
+        title: 'Ridding The World Of Stairs'
+        subtitle: 'Broke 100000 stair blocks'
         xp: 200
         commands: {}
-    8000:
-        title: 'Stairway to Heaven'
-        subtitle: 'Placed 8,000 stair blocks'
+    1000000:
+        title: 'Stairs Destroyer'
+        subtitle: 'Broke 1 million stair blocks'
         xp: 200
         commands: {}
-    15000:
-        title: 'God of Stairs'
-        subtitle: 'Placed 15,000 stair blocks'
+    5000000:
+        title: 'Extinction of Stairs'
+        subtitle: 'Broke 5 million stair blocks'
         xp: 300
         commands: {}
 
 IRON_BLOCK:
     1:
-        title: 'Fresh Off the Anvil'
-        subtitle: 'Placed 1 iron block'
+        title: 'Iron Smelter'
+        subtitle: 'Broke 10 iron blocks'
         xp: 10
         commands: {}
     10:
-        title: 'Enough For An Iron Golem'
-        subtitle: 'Placed 10 iron blocks'
+        title: 'Iron Bender'
+        subtitle: 'Broke 100 iron blocks'
         xp: 10
         commands: {}
     20:
-        title: 'Iron Tank'
-        subtitle: 'Placed 20 iron blocks'
-        xp: 50
+        title: 'Miner Of Iron'
+        subtitle: 'Broke 500 iron blocks'
+        xp: 10
         commands: {}
     40:
-        title: 'Iron Tools, Iron Weapons'
-        subtitle: 'Placed 40 iron blocks'
-        xp: 100
+        title: 'Iron Hater'
+        subtitle: 'Broke 1000 iron blocks'
+        xp: 50
         commands: {}
     100:
-        title: 'Iron Man'
-        subtitle: 'Placed 120 iron blocks'
-        xp: 200
+        title: 'Find A Use Without Iron'
+        subtitle: 'Broke 5000 iron blocks'
+        xp: 100
         commands: {}
     200:
-        title: 'Iron Factory'
-        subtitle: 'Placed 200 iron blocks'
-        xp: 200
+        title: 'Iron Destroyer'
+        subtitle: 'Broke 50000 iron blocks'
+        xp: 150
         commands: {}
     500:
-        title: 'God of Iron'
-        subtitle: 'Placed 500 iron blocks'
-        xp: 300
+        title: 'Extinction Of Iron'
+        subtitle: 'Broke 100000 iron blocks'
+        xp: 200
         commands: {}
         
 DIAMOND_BLOCK:
     1:
-        title: 'A Piece Of A Jewel'
-        subtitle: 'Placed 1 diamond block'
-        xp: 10
-        commands: {}
-    5:
-        title: 'Diamond Excavator'
-        subtitle: 'Placed 5 diamond blocks'
+        title: 'Diamond Breaker'
+        subtitle: 'Broke 10 diamond blocks'
         xp: 10
         commands: {}
     10:
-        title: 'Diamond Maker'
-        subtitle: 'Placed 10 diamond blocks'
-        xp: 50
+        title: 'Diamond Melter'
+        subtitle: 'Broke 100 diamond blocks'
+        xp: 10
         commands: {}
     20:
-        title: 'Wealth Of Diamonds'
-        subtitle: 'Placed 20 diamond blocks'
-        xp: 100
+        title: 'Miner Of Diamond'
+        subtitle: 'Broke 500 diamond blocks'
+        xp: 10
         commands: {}
-    50:
-        title: 'Diamond Man'
-        subtitle: 'Placed 50 diamond blocks'
-        xp: 200
+    40:
+        title: 'Diamond Hater'
+        subtitle: 'Broke 1000 diamond blocks'
+        xp: 50
         commands: {}
     100:
-        title: 'A Room Made Of Diamonds'
-        subtitle: 'Placed 100 diamond blocks'
-        xp: 200
+        title: 'Find A Use Without Diamond'
+        subtitle: 'Broke 5000 diamond blocks'
+        xp: 100
         commands: {}
-    300:
-        title: 'God of Diamonds'
-        subtitle: 'Placed 300 diamond blocks'
-        xp: 300
+    200:
+        title: 'Diamond Destroyer'
+        subtitle: 'Broke 50000 diamond blocks'
+        xp: 150
+        commands: {}
+    500:
+        title: 'Extinction Of Diamond'
+        subtitle: 'Broke 100000 diamond blocks'
+        xp: 200
         commands: {}
         
 GOLD_BLOCK:
     1:
-        title: 'The Butter Block'
-        subtitle: 'Placed 1 iron block'
+        title: 'Gold Smelter'
+        subtitle: 'Broke 10 gold blocks'
         xp: 10
         commands: {}
     10:
-        title: 'Golden Riches'
-        subtitle: 'Placed 10 iron blocks'
+        title: 'Gold Bender'
+        subtitle: 'Broke 100 gold blocks'
         xp: 10
         commands: {}
     20:
-        title: 'Gold Tank'
-        subtitle: 'Placed 20 iron blocks'
-        xp: 50
+        title: 'Miner Of Gold'
+        subtitle: 'Broke 500 gold blocks'
+        xp: 10
         commands: {}
     40:
-        title: 'Shiny Objects, Weak Tools'
-        subtitle: 'Placed 40 iron blocks'
-        xp: 100
+        title: 'Gold Hater'
+        subtitle: 'Broke 1000 gold blocks'
+        xp: 50
         commands: {}
     100:
-        title: 'Goldmember'
-        subtitle: 'Placed 120 iron blocks'
-        xp: 200
+        title: 'Find A Use Without Gold'
+        subtitle: 'Broke 5000 gold blocks'
+        xp: 100
         commands: {}
     200:
-        title: 'King Goldas'
-        subtitle: 'Placed 200 iron blocks'
-        xp: 200
+        title: 'Gold Destroyer'
+        subtitle: 'Broke 50000 gold blocks'
+        xp: 150
         commands: {}
     500:
-        title: 'God of Gold'
-        subtitle: 'Placed 500 iron blocks'
-        xp: 300
+        title: 'Extinction Of Gold'
+        subtitle: 'Broke 100000 gold blocks'
+        xp: 200
         commands: {}

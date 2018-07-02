@@ -82,28 +82,28 @@ BLAZE:
         commands: {}
 CAVE_SPIDER:
     1:
-        title: 'Putting out 1 blaze'
-        subtitle: 'Killed 1 blaze'
-        xp: 10
+        title: 'Sticky situation'
+        subtitle: 'Killed 1 cave spider'
+        xp: 30
         commands: {}
     10:
-        title: 'Putting out 10 blazes'
-        subtitle: 'Killed 10 blazes'
-        xp: 10
+        title: 'Sticky situation 2'
+        subtitle: 'Killed 10 cave spiders'
+        xp: 40
         commands: {}
     20:
-        title: 'Putting out 20 blazes'
-        subtitle: 'Killed 20 blazes'
-        xp: 10
+        title: 'Sticky situation 3'
+        subtitle: 'Killed 20 cave spider'
+        xp: 50
         commands: {}
     30:
-        title: 'Putting out 30 blazes'
-        subtitle: 'Killed 30 blazes'
-        xp: 10
+        title: 'Sticky situation 4'
+        subtitle: 'Killed 30 cave spiders'
+        xp: 60
         commands: {}
     40:
-        title: 'Putting out 40 blazes'
-        subtitle: 'Killed 40 blazes'
+        title: 'Sticky situation 5'
+        subtitle: 'Killed 40 cave spider'
         xp: 10
         commands: {}    
 CHICKEN:

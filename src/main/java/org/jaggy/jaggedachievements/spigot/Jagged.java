@@ -19,6 +19,8 @@ public class Jagged extends JavaPlugin {
     public boolean loaded;
     public Logging log;
     private PluginManager manager;
+    public Commands cmds;
+    public Levels levels;
     
     public void onLoad() {
         manager = getServer().getPluginManager();
@@ -29,7 +31,9 @@ public class Jagged extends JavaPlugin {
         
         db = new DB();
         db.load(this);
+        levels = new Levels(this);
     }
+    
     public void onEnable() {
         db.enable();
         
@@ -37,7 +41,10 @@ public class Jagged extends JavaPlugin {
         manager.registerEvents(new SessionEvents(this), this);
         manager.registerEvents( new BlockEvents(this), this);
         manager.registerEvents( new EntityEvents(this), this);
+        
+        cmds = new Commands(this);
     }
+    
     public void onDisable() {
         db.unload();
     }

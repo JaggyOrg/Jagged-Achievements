@@ -90,6 +90,7 @@ public class TimedEvents extends BukkitRunnable {
                     plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
                 });
             }
+            plugin.levels.checkStatus(player);
         }
     }
 

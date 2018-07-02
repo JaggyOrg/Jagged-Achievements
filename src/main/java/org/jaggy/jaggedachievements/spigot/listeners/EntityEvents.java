@@ -20,7 +20,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.EntityType;
@@ -86,10 +85,11 @@ public class EntityEvents implements Listener {
                             plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
                         });
                     }
+                    plugin.levels.checkStatus(player);
                 }
             }
         } catch (SQLException ex) {
-            Logger.getLogger(EntityEvents.class.getName()).log(Level.SEVERE, null, ex);
+            plugin.log.log(Level.SEVERE, null, ex);
         }
         }
     }

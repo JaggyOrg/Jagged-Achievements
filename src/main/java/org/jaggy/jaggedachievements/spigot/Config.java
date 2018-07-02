@@ -101,6 +101,7 @@ public class Config {
     public YamlConfiguration Timed;
     public YamlConfiguration Entity;
     public boolean defaultSSL = false;
+    public YamlConfiguration Levels;
 
     /**
      * Gets if the server is a stand alone server.
@@ -293,5 +294,24 @@ public class Config {
         } catch (IOException | InvalidConfigurationException ex) {
             plugin.log.log(Level.SEVERE, null, ex);
         }
+        
+        //Check and save levels file
+        Levels = new YamlConfiguration();
+        File = new File(plugin.getDataFolder(), "Levels.yml");
+        if (!File.exists()) {
+            plugin.saveResource("Levels.yml", false);
+        }
+        try {
+            File = new File(plugin.getDataFolder(), "Levels.yml");
+            Levels.load(File);
+        } catch (IOException | InvalidConfigurationException ex) {
+            plugin.log.log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void reload() {
+        this.load(plugin);
+        plugin.db.unload();
+        plugin.db.load(plugin);
     }
 }

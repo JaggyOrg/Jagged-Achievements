@@ -28,3 +28,14 @@ permissions:
             jachievements.user: true
             jachievements.mod: true
             jachievements.admin: true
+
+commands:
+   profile:
+      description: Show Achievement profiles
+      usage: /profile [profile]
+   achievements:
+      description: Main Command if no args it will display past achievements
+      usage: /achievements <past|reload>
+   required:
+      description: Show the required xp for the next level
+      usage: /required

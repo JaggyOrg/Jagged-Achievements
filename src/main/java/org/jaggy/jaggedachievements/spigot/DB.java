@@ -96,6 +96,7 @@ public class DB {
                 + "LastSeen TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n"
                 + "Server VARCHAR(60),\n"
                 + "Name VARCHAR(60),\n"
+                + "Level INT(4) DEFAULT 0,\n"
                 + "PRIMARY KEY (UID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
                 
         //Create Player Events table

@@ -1,0 +1,64 @@
+#
+# Jagged Achievements Levels File
+#
+
+# Copyright (C) 20108 Quirkylee
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+######################################
+#                                    #
+# Levels                             #
+#                                    #
+######################################
+1:
+    Name: 'Member'
+    RequiredXP: 0
+    Commands: {}
+2:
+    Name: '*Member*'
+    RequiredXP: 1000
+    Commands: 
+        - pex group member add %player
+3:
+    Name: 'Trusted'
+    RequiredXP: 2000
+    Commands: 
+        - pex group trusted add %player
+4:
+    Name: '*Trusted*'
+    RequiredXP: 3000
+    Commands: 
+        - pex group trusted2 add %player
+5:
+    Name: 'Veteran'
+    RequiredXP: 4000
+    Commands: 
+        - pex group Veteran add %player
+6:
+    Name: 'LegendI'
+    RequiredXP: 6000
+    Commands: 
+        - pex group Legend1 add %player
+7:
+    Name: 'LegendII'
+    RequiredXP: 7000
+    Commands: 
+        - pex group Legend2 add %player
+8:
+    Name: 'LegendIII'
+    RequiredXP: 9000
+    Commands: 
+        - pex group Legend3 add %player

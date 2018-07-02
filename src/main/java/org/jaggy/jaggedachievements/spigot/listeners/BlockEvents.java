@@ -78,6 +78,7 @@ public class BlockEvents implements Listener {
                                 plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
                             }
                         }
+                        plugin.levels.checkStatus(player);
                     }
                 }
                 
@@ -122,6 +123,7 @@ public class BlockEvents implements Listener {
                             });
                         }
                     }
+                    plugin.levels.checkStatus(player);
                 }
                 
             } catch (SQLException | SecurityException ex) {
