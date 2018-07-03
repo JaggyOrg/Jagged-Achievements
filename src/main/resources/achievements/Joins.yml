@@ -47,17 +47,17 @@
     - give @p 11 16
 20:
     title: '20 Server Joins Achievement'
-    subtitle: 'By now your hooked or you are staff/an developer!'
+    subtitle: 'By now you are hooked or are staff/a developer!'
     xp: 100
     commands: {}
 30:
     title: '30 Server Joins Achievement'
-    subtitle: 'Gee, that is amazing you got 30 joins.'
+    subtitle: 'Gee, that is amazing, you got 30 joins.'
     xp: 100
     commands: {}
 40:
     title: '40 Server Joins Achievement'
-    subtitle: 'Jaggy likes rabits!'
+    subtitle: 'Jaggy likes rabbits!'
     xp: 100
     commands: {}
 50:
@@ -67,7 +67,7 @@
     commands: {}
 60:
     title: '60 Server Joins Achievement'
-    subtitle: 'You like us so much, you pratically love us!'
+    subtitle: 'You like us so much, you practically love us!'
     xp: 200
     commands: {}
 70:
@@ -82,11 +82,11 @@
     commands: {}
 90:
     title: '90 Server Joins Achievement'
-    subtitle: 'You are almost a god! 90 Joins!'
+    subtitle: 'You are almost like a god! 90 Joins!'
     xp: 250
     commands: {}
 100:
-    title: '90 Server Joins Achievement'
+    title: '100 Server Joins Achievement'
     subtitle: 'You are a god! 100 Joins!'
     xp: 250
     commands: {}
