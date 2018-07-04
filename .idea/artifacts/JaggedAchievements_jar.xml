@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JaggedAchievements:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JaggedAchievements</output-path>
+    <root id="archive" name="JaggedAchievements.jar">
+      <element id="module-output" name="JaggedAchievements" />
+    </root>
+  </artifact>
+</component>
