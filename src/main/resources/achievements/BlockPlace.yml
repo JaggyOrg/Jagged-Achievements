@@ -28,46 +28,64 @@ DIRT:
         title: 'Filling In A Hole'
         subtitle: 'Placed 10 dirt blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Filling In A Ditch'
         subtitle: 'Placed 50 dirt blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Building A Small Mound'
         subtitle: 'Placed 100 dirt blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Building A Hill'
         subtitle: 'Placed 500 dirt blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Finding A Use For Dirt'
         subtitle: 'Placed 1000 dirt blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'We Need More Dirt'
         subtitle: 'Placed 5,000 dirt blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: 'Filling in the Grand Cayon'
         subtitle: 'Placed 10,000 dirt blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Building A Mountian'
         subtitle: 'Placed 100,000 dirt blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000000:
         title: 'God of Dirt'
         subtitle: 'Placed a million dirt blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 COBBLESTONE:
@@ -75,46 +93,64 @@ COBBLESTONE:
         title: 'Throwing Some Stones'
         subtitle: 'Placed 10 cobblestone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Between a Rock and Another Rock'
         subtitle: 'Placed 50 cobblestone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Building A Small Quarry'
         subtitle: 'Placed 100 cobblestone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'I Like Cobblestone'
         subtitle: 'Placed 500 cobblestone blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Finding A Use For Cobblestone'
         subtitle: 'Placed 1,000 cobblestone blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Building A Small Castle'
         subtitle: 'Placed 5,000 cobblestone blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: 'Gosh, 10,000 Cobblestone?'
         subtitle: 'Placed 10,000 cobblestone blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Cobblestone Bridge Of The Galaxy'
         subtitle: 'Placed 100,000 cobblestone blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Cobblestone'
         subtitle: 'Placed a million cobblestone blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 WOOD:
@@ -122,92 +158,128 @@ WOOD:
         title: 'Picking Up Sticks'
         subtitle: 'Placed 10 wood blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Chopping Down Trees'
         subtitle: 'Placed 50 wood blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Building a Table'
         subtitle: 'Placed 100 wood blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Building A Fence'
         subtitle: 'Placed 500 wood blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Building A Cabin'
         subtitle: 'Placed 1,000 wood blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Master Lumberman'
         subtitle: 'Placed 5,000 wood blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: 'What Do I Do With All This Wood?'
         subtitle: 'Placed 10,000 wood blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'God of Wood'
         subtitle: 'Placed 100,000 wood blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Wood'
         subtitle: 'Placed a million wood blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 STONE:       
     10:
         title: 'Digging at Stones'
         subtitle: 'Placed 10 stone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Stone Maker'
         subtitle: 'Placed 50 stone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Stone Blaster'
         subtitle: 'Placed 100 stone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'I Like Rocks'
         subtitle: 'Placed 500 stone blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Finding A Use For Stone'
         subtitle: 'Placed 1,000 stone blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Building A Small Castle'
         subtitle: 'Placed 5,000 cobblestone blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: 'How much Stone is too much Stone?'
         subtitle: 'Placed 10,000 cobblestone blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Stone Bridge Of The Galaxy'
         subtitle: 'Placed 100,000 cobblestone blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Stone'
         subtitle: 'Placed a million cobblestone blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 WOOL:
@@ -215,46 +287,64 @@ WOOL:
         title: 'Cutting Some Wool'
         subtitle: 'Placed 10 cobblestone block'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'A Bed Of Wool'
         subtitle: 'Placed 50 cobblestone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Wool Farmer'
         subtitle: 'Placed 100 cobblestone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Using A Ton Of Wool'
         subtitle: 'Placed 500 cobblestone blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Wooly Giant (Rat)'
         subtitle: 'Placed 1,000 cobblestone blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'A Mountain Of Wool'
         subtitle: 'Placed 5,000 cobblestone blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: 'The Wool Company'
         subtitle: 'Placed 10,000 cobblestone blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'A Planet Full Of Wool'
         subtitle: 'Placed 100,000 cobblestone blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Wool'
         subtitle: 'Placed a million cobblestone blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 CONCRETE:
@@ -262,46 +352,64 @@ CONCRETE:
         title: 'Concrete Mixer'
         subtitle: 'Placed 10 concrete blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'When Stone And Water Combine'
         subtitle: 'Placed 50 concrete blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Truck Of Concrete'
         subtitle: 'Placed 100 concrete blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'You are Like A Factory'
         subtitle: 'Placed 500 concrete blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: "City Block's Worth"
         subtitle: 'Placed 1,000 concrete blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Concretetron 5000'
         subtitle: 'Placed 5,000 concrete blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: 'Not Enough Concrete'
         subtitle: 'Placed 10,000 concrete blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'So. Much. Concrete.'
         subtitle: 'Placed 100,000 concrete blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Concrete'
         subtitle: 'Placed a million concrete blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 QUARTZ_BLOCK:
@@ -309,92 +417,128 @@ QUARTZ_BLOCK:
         title: 'Where Did You Find These?'
         subtitle: 'Placed 10 quartz blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'No Shortage of Quartz'
         subtitle: 'Placed 50 quartz blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'White Rock From a Red Place'
         subtitle: 'Placed 100 quartz blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'I Like Quartz'
         subtitle: 'Placed 500 quartz blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'The Usage Of Quartz'
         subtitle: 'Placed 1,000 quartz blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'The Pretty White Stone'
         subtitle: 'Placed 5,000 quartz blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: 'An Abundance Of Quartz'
         subtitle: 'Placed 10,000 quartz blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Enough Quartz to Empty The Nether'
         subtitle: 'Placed 100,000 quartz blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Quartz'
         subtitle: 'Placed a million quartz blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 SANDSTONE:
     10:
         title: 'We Got Some Sandstone'
         subtitle: 'Placed 10 sandstone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Even More Sandstone'
         subtitle: 'Placed 50 sandstone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Got A Lot Of Sandstone'
         subtitle: 'Placed 100 sandstone blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Enough Sandstone for a Village'
         subtitle: 'Placed 500 sandstone blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Temple of Sandstone'
         subtitle: 'Placed 1,000 sandstone blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'A Sea Of Sandstone'
         subtitle: 'Placed 5,000 sandstone blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: 'Sandstone Beneath The Sahara'
         subtitle: 'Placed 10,000 sandstone blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Enough Sandstone for the World!'
         subtitle: 'Placed 100,000 sandstone blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Sandstone'
         subtitle: 'Placed a million sandstone blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 GLASS:
@@ -402,46 +546,64 @@ GLASS:
         title: 'Enough To Poke Your Eye Out!'
         subtitle: 'Placed 10 glass blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Glass Statue'
         subtitle: 'Placed 50 glass blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Glass Museum'
         subtitle: 'Placed 100 glass blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Glass Temple'
         subtitle: 'Placed 500 glass blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Finding A Use For Breakables'
         subtitle: 'Placed 1,000 glass blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'A Glassy Place'
         subtitle: 'Placed 5,000 glass blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: "What's All This Glass For?"
         subtitle: 'Placed 10,000 glass blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Rainbow Glass Bridge'
         subtitle: 'Placed 100,000 glass blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Glass'
         subtitle: 'Placed a million glass blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 SMOOTH_BRICK:
@@ -449,92 +611,128 @@ SMOOTH_BRICK:
         title: 'Better Looking Stone'
         subtitle: 'Placed 10 glass blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Stone Brick Creator'
         subtitle: 'Placed 50 glass blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'More Stone Bricks'
         subtitle: 'Placed 100 glass blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Even More Stone Bricks'
         subtitle: 'Placed 500 glass blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Where Are You Getting All This Stone Brick?'
         subtitle: 'Placed 1,000 glass blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'The Stone Brick Land'
         subtitle: 'Placed 5,000 glass blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10000:
         title: '(Stone) Brick Break'
         subtitle: 'Placed 10,000 glass blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Enough To Build A Kingdom'
         subtitle: 'Placed 100,000 glass blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'God of Stone Bricks'
         subtitle: 'Placed a million glass blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 STEP:
     5:
         title: 'One Small Step...'
         subtitle: 'Placed 5 stair blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Stepping It Up'
         subtitle: 'Placed 50 stair blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Stepping Stones'
         subtitle: 'Placed 100 stair blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     300:
         title: 'Stairs, Stairs, Stairs..'
         subtitle: 'Placed 300 stair blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     800:
         title: 'Dare Climb These Stairs?'
         subtitle: 'Placed 8000 stair blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1400:
         title: 'Would an Escalator Be Better?'
         subtitle: 'Placed 1,400 stair blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     3000:
         title: 'Climbing a Mountain of Steps'
         subtitle: 'Placed 3,000 stair blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     8000:
         title: 'Stairway to Heaven'
         subtitle: 'Placed 8,000 stair blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     15000:
         title: 'God of Stairs'
         subtitle: 'Placed 15,000 stair blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 IRON_BLOCK:
@@ -542,36 +740,50 @@ IRON_BLOCK:
         title: 'Fresh Off the Anvil'
         subtitle: 'Placed 1 iron block'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10:
         title: 'Enough For An Iron Golem'
         subtitle: 'Placed 10 iron blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     20:
         title: 'Iron Tank'
         subtitle: 'Placed 20 iron blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     40:
         title: 'Iron Tools, Iron Weapons'
         subtitle: 'Placed 40 iron blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Iron Man'
         subtitle: 'Placed 120 iron blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     200:
         title: 'Iron Factory'
         subtitle: 'Placed 200 iron blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'God of Iron'
         subtitle: 'Placed 500 iron blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 DIAMOND_BLOCK:
@@ -579,36 +791,50 @@ DIAMOND_BLOCK:
         title: 'A Piece Of A Jewel'
         subtitle: 'Placed 1 diamond block'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5:
         title: 'Diamond Excavator'
         subtitle: 'Placed 5 diamond blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10:
         title: 'Diamond Maker'
         subtitle: 'Placed 10 diamond blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     20:
         title: 'Wealth Of Diamonds'
         subtitle: 'Placed 20 diamond blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50:
         title: 'Diamond Man'
         subtitle: 'Placed 50 diamond blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'A Room Made Of Diamonds'
         subtitle: 'Placed 100 diamond blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     300:
         title: 'God of Diamonds'
         subtitle: 'Placed 300 diamond blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 GOLD_BLOCK:
@@ -616,34 +842,48 @@ GOLD_BLOCK:
         title: 'The Butter Block'
         subtitle: 'Placed 1 iron block'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10:
         title: 'Golden Riches'
         subtitle: 'Placed 10 iron blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     20:
         title: 'Gold Tank'
         subtitle: 'Placed 20 iron blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     40:
         title: 'Shiny Objects, Weak Tools'
         subtitle: 'Placed 40 iron blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Goldmember'
         subtitle: 'Placed 120 iron blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     200:
         title: 'King Goldas'
         subtitle: 'Placed 200 iron blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'God of Gold'
         subtitle: 'Placed 500 iron blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}

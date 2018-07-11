@@ -28,46 +28,64 @@ DIRT:
         title: 'Dirt Cleaner'
         subtitle: 'Broke 10 dirt blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Dirt Remover'
         subtitle: 'Broke 100 dirt blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Janitor Of Dirt'
         subtitle: 'Broke 500 dirt blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Dirt Hater'
         subtitle: 'Broke 1000 dirt blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Find A Use Without Dirt'
         subtitle: 'Broke 5000 dirt blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50000:
         title: 'Removing A Mountain Of Dirt'
         subtitle: 'Broke 50000 dirt blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Emptying The World Of Dirt'
         subtitle: 'Broke 100000 dirt blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'Dirt Destroyer'
         subtitle: 'Broke 1 million dirt blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000000:
         title: 'Extinction Of Dirt'
         subtitle: 'Broke 5 million dirt blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 COBBLESTONE:
@@ -75,46 +93,64 @@ COBBLESTONE:
         title: 'Cobble Sweeper'
         subtitle: 'Broke 10 cobble blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Cobble Chucker'
         subtitle: 'Broke 100 cobble blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Miner Of Cobble'
         subtitle: 'Broke 500 cobble blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Cobble Hater'
         subtitle: 'Broke 1000 cobble blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Find A Use Without Cobble'
         subtitle: 'Broke 5000 cobble blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50000:
         title: 'Blowing Up A Mountain'
         subtitle: 'Broke 50000 cobble blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Emptying A World Of Cobble'
         subtitle: 'Broke 100000 cobble blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'Cobble Destroyer'
         subtitle: 'Broke 1 million cobble blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000000:
         title: 'Extinction of Cobble'
         subtitle: 'Broke 5 million cobble blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 WOOD:
@@ -122,92 +158,128 @@ WOOD:
         title: 'Wood Chopper'
         subtitle: 'Broke 10 wood plank blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Plank Puller'
         subtitle: 'Broke 100 wood plank blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Wood Burner'
         subtitle: 'Broke 500 wood plank blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Wood Hater'
         subtitle: 'Broke 1000 wood plank blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Find A Use Without Wood '
         subtitle: 'Broke 5000 wood plank blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50000:
         title: 'Trimming A Mountain Of Wood '
         subtitle: 'Broke 50000 wood plank blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Emptying A World Of Wood'
         subtitle: 'Broke 100000 wood plank blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'Wood Destroyer'
         subtitle: 'Broke 1 million wood plank blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000000:
         title: 'Extinction of Wood'
         subtitle: 'Broke 5 million wood plank blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 LOG:
     10:
         title: 'Tree Chopper'
         subtitle: 'Broke 10 log blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Wood Chipper'
         subtitle: 'Broke 100 log blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Lumberman'
         subtitle: 'Broke 500 log blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Log Hater'
         subtitle: 'Broke 1000 log blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Find A Use Without Logs'
         subtitle: 'Broke 5000 log blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50000:
         title: 'Chopping Down A Mountain'
         subtitle: 'Broke 50000 log blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Emptying A World Of Logs'
         subtitle: 'Broke 100000 log blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'Log Destroyer'
         subtitle: 'Broke 1 million log blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000000:
         title: 'Extinction of Logs'
         subtitle: 'Broke 5 million log blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 WOOL:
@@ -215,46 +287,64 @@ WOOL:
         title: 'Wool Breaker'
         subtitle: 'Broke 10 wool blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Wool Burner'
         subtitle: 'Broke 100 wool blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Wool Tearer'
         subtitle: 'Broke 500 wool blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Wool Hater'
         subtitle: 'Broke 1000 wool blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Find A Use Without Wool'
         subtitle: 'Broke 5000 wool blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50000:
         title: 'Stripping A Mountain Of Wool'
         subtitle: 'Broke 50000 wool blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Emptying A World Of Wool'
         subtitle: 'Broke 100000 wool blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'Wool Destroyer'
         subtitle: 'Broke 1 million wool blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000000:
         title: 'Extinction of Wool'
         subtitle: 'Broke 5 million wool blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 CONCRETE:
@@ -262,46 +352,64 @@ CONCRETE:
         title: 'Concrete Ruiner'
         subtitle: 'Broke 10 concrete blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Concrete Remover'
         subtitle: 'Broke 100 concrete blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Stripping A Road'
         subtitle: 'Broke 500 concrete blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Concrete Hater'
         subtitle: 'Broke 1000 concrete blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Find A Use Without Concrete'
         subtitle: 'Broke 5000 concrete blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50000:
         title: 'Paving Over A Mountain'
         subtitle: 'Broke 50000 concrete blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Emptying A World Of Concrete'
         subtitle: 'Broke 100000 concrete blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'Concrete Destroyer'
         subtitle: 'Broke 1 million concrete blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000000:
         title: 'Extinction of Concrete'
         subtitle: 'Broke 5 million concrete blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 QUARTZ_BLOCK:
@@ -309,46 +417,64 @@ QUARTZ_BLOCK:
         title: 'Quartz Breaker'
         subtitle: 'Broke 10 quartz blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Quartz Melter'
         subtitle: 'Broke 100 quartz blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Miner Of Quartz'
         subtitle: 'Broke 500 quartz blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Quartz Hater'
         subtitle: 'Broke 1000 quartz blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Find A Use Without Quartz'
         subtitle: 'Broke 5000 quartz blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50000:
         title: 'Dropping All Da Quartz'
         subtitle: 'Broke 50000 quartz blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Emptying A World Of Quartz'
         subtitle: 'Broke 100000 quartz blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'Quartz Destroyer'
         subtitle: 'Broke 1 million quartz blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000000:
         title: 'Extinction of Quartz'
         subtitle: 'Broke 5 million quartz blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 STEP:
@@ -356,46 +482,64 @@ STEP:
         title: 'Stair Sweeper'
         subtitle: 'Broke 10 stair blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Stair Stomper'
         subtitle: 'Broke 100 stair blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Breaker Of Stairs'
         subtitle: 'Broke 500 stair blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000:
         title: 'Stair Hater'
         subtitle: 'Broke 1000 stair blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000:
         title: 'Find A Use Without Stairs'
         subtitle: 'Broke 5000 stair blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     50000:
         title: 'Knocking Down A Mountain Of Stairs'
         subtitle: 'Broke 50000 stair blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100000:
         title: 'Ridding The World Of Stairs'
         subtitle: 'Broke 100000 stair blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     1000000:
         title: 'Stairs Destroyer'
         subtitle: 'Broke 1 million stair blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     5000000:
         title: 'Extinction of Stairs'
         subtitle: 'Broke 5 million stair blocks'
         xp: 300
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
 
 IRON_BLOCK:
@@ -403,36 +547,50 @@ IRON_BLOCK:
         title: 'Iron Smelter'
         subtitle: 'Broke 10 iron blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10:
         title: 'Iron Bender'
         subtitle: 'Broke 100 iron blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     20:
         title: 'Miner Of Iron'
         subtitle: 'Broke 500 iron blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     40:
         title: 'Iron Hater'
         subtitle: 'Broke 1000 iron blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Find A Use Without Iron'
         subtitle: 'Broke 5000 iron blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     200:
         title: 'Iron Destroyer'
         subtitle: 'Broke 50000 iron blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Extinction Of Iron'
         subtitle: 'Broke 100000 iron blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 DIAMOND_BLOCK:
@@ -440,36 +598,50 @@ DIAMOND_BLOCK:
         title: 'Diamond Breaker'
         subtitle: 'Broke 10 diamond blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10:
         title: 'Diamond Melter'
         subtitle: 'Broke 100 diamond blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     20:
         title: 'Miner Of Diamond'
         subtitle: 'Broke 500 diamond blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     40:
         title: 'Diamond Hater'
         subtitle: 'Broke 1000 diamond blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Find A Use Without Diamond'
         subtitle: 'Broke 5000 diamond blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     200:
         title: 'Diamond Destroyer'
         subtitle: 'Broke 50000 diamond blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Extinction Of Diamond'
         subtitle: 'Broke 100000 diamond blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
         
 GOLD_BLOCK:
@@ -477,34 +649,48 @@ GOLD_BLOCK:
         title: 'Gold Smelter'
         subtitle: 'Broke 10 gold blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     10:
         title: 'Gold Bender'
         subtitle: 'Broke 100 gold blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     20:
         title: 'Miner Of Gold'
         subtitle: 'Broke 500 gold blocks'
         xp: 10
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     40:
         title: 'Gold Hater'
         subtitle: 'Broke 1000 gold blocks'
         xp: 50
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     100:
         title: 'Find A Use Without Gold'
         subtitle: 'Broke 5000 gold blocks'
         xp: 100
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     200:
         title: 'Gold Destroyer'
         subtitle: 'Broke 50000 gold blocks'
         xp: 150
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}
     500:
         title: 'Extinction Of Gold'
         subtitle: 'Broke 100000 gold blocks'
         xp: 200
+        # Gold is only used if JaggyGold is enabled
+        gold: 10
         commands: {}

@@ -29,59 +29,83 @@
     title: 'First Five!'
     subtitle: 'You have been playing on this server for 5 minutes'
     xp: 2
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 15:
     title: 'First Fifteen!'
     subtitle: 'You have been playing on this server for 15 minutes'
     xp: 2
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 30:
     title: 'First Thirty!'
     subtitle: 'You have been playing on this server for 30 minutes'
     xp: 5
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 60:
     title: 'Your Awesome!'
     subtitle: 'You have been playing on this server for 1 hour'
     xp: 10
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 120:
     title: 'We love that your having fun!'
     subtitle: 'You have been playing on this server for 2 hours'
     xp: 10
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 180:
     title: 'Going for the gold!'
     subtitle: 'You have been playing on this server for 3 hours'
     xp: 20
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 240:
     title: 'Going for the diamonds!'
     subtitle: 'You have been playing on this server for 4 hours'
     xp: 20
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 300:
     title: 'Hello, 5 hours! Thank you!'
     subtitle: 'You have been playing on this server for 5 hours'
     xp: 20
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 360:
     title: 'Megaplex of hours!'
     subtitle: 'You have been playing on this server for 6 hours'
     xp: 30
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 420:
     title: 'Idling Pro!'
     subtitle: 'You have been playing on this server for 7 hours'
     xp: 30
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 480:
     title: 'Idling God!'
     subtitle: 'You have been playing on this server for 8 hours'
     xp: 30
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
 540:
     title: 'Pure Idling!'
     subtitle: 'You have been playing on this server for 9 hours'
     xp: 30
+    # Gold is only used if JaggyGold is enabled
+    gold: 10
     commands: {}
