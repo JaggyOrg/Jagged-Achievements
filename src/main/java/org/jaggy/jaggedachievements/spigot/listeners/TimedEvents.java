@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 Quirkylee
+ * Copyright (C) 2018 Jaggy Enterprises
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,16 +13,10 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
  */
 package org.jaggy.jaggedachievements.spigot.listeners;
 
-import java.util.Date;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Calendar;
-import java.util.Iterator;
-import java.util.List;
-import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -31,6 +25,14 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.jaggy.jaggedachievements.spigot.Config;
 import org.jaggy.jaggedachievements.spigot.DB;
 import org.jaggy.jaggedachievements.spigot.Jagged;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.logging.Level;
 
 /**
  * Timed events handler

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JaggyGold">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JaggyGold/out/artifacts/JaggyGold_jar/JaggyGold.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

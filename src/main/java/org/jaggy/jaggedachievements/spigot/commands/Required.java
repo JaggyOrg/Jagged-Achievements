@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 Quirkylee
+ * Copyright (C) 2018 Jaggy Enterprises
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,13 +13,10 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
  */
 package org.jaggy.jaggedachievements.spigot.commands;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -28,6 +25,10 @@ import org.bukkit.entity.Player;
 import org.jaggy.jaggedachievements.spigot.Config;
 import org.jaggy.jaggedachievements.spigot.DB;
 import org.jaggy.jaggedachievements.spigot.Jagged;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
 
 /**
  *
