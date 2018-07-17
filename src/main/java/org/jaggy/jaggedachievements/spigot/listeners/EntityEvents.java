@@ -77,10 +77,16 @@ public class EntityEvents implements Listener {
                     List<String> commands = config.Entity.getStringList(type.toString() + "." + count + ".commands");
                     player.sendTitle(ChatColor.GOLD + title, ChatColor.BLUE + subtitle, 20, 90, 20);
                     player.sendMessage(ChatColor.BOLD + "New Achievement: " + title);
+                    long coins = 0;
+                    if (plugin.getServer().getPluginManager().isPluginEnabled("JaggyGold")) {
+                        coins = config.Entity.getLong(type.toString() + "." + count + ".gold");
+                        plugin.gm.addGold(player,coins);
+                        plugin.cmds.sendMessage(player, ChatColor.AQUA+""+ChatColor.BOLD+coins+" Gold Coins has been added to you account.");
+                    }
                     db.query("INSERT INTO " + config.getPrefix() + "Achievements (UID, Achievement, Location,"
-                            + " EventType, XP, Server) VALUES ("
+                            + " EventType, Gold, XP, Server) VALUES ("
                             + "'" + data.getInt("UID") + "', '" + title + "', '" + player.getLocation() + "', "
-                            + "6, " + xp + ", '" + config.getServerName() + "')");
+                            + "6, "+coins+", " + xp + ", '" + config.getServerName() + "')");
 
                     if (commands.iterator().hasNext()) {
                         commands.forEach((command) -> {

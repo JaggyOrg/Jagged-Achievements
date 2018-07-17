@@ -19,6 +19,7 @@
 
 package org.jaggy.jaggedachievements.spigot;
 
+import org.bstats.Metrics;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jaggy.gold.api.GoldManager;
@@ -55,19 +56,24 @@ public class Jagged extends JavaPlugin {
     }
     
     public void onEnable() {
-        db.enable();
-        
-        //Register event Listeners
-        manager.registerEvents(new SessionEvents(this), this);
-        manager.registerEvents( new BlockEvents(this), this);
-        manager.registerEvents( new EntityEvents(this), this);
+        // All you have to do is adding this line in your onEnable method:
+        Metrics metrics = new Metrics(this);
+        if (loaded) {
+            db.enable();
+            //Register event Listeners
+            manager.registerEvents(new SessionEvents(this), this);
+            manager.registerEvents(new BlockEvents(this), this);
+            manager.registerEvents(new EntityEvents(this), this);
 
-        if(manager.isPluginEnabled("JaggyGold")) {
-            gm = new GoldManager();
-            log.info("Jaggy Gold hook enabled.");
+            if (manager.isPluginEnabled("JaggyGold")) {
+                gm = new GoldManager();
+                log.info("Jaggy Gold hook enabled.");
+            }
+
+            cmds = new Commands(this);
+        } else {
+            throw new Error("Will not function because it is a first install or there is a problem connecting/opening the database.");
         }
-        
-        cmds = new Commands(this);
     }
     
     public void onDisable() {

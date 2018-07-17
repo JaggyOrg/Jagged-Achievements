@@ -92,10 +92,16 @@ public class SessionEvents implements Listener {
                         
                         player.sendTitle(ChatColor.GOLD+title, ChatColor.BLUE+subtitle, 20, 90, 20);
                         player.sendMessage(ChatColor.BOLD+"New Achievement: "+title);
+                        long coins = 0;
+                        if (plugin.getServer().getPluginManager().isPluginEnabled("JaggyGold")) {
+                            coins = config.Joins.getLong(count + ".gold");
+                            plugin.gm.addGold(player,coins);
+                            plugin.cmds.sendMessage(player, ChatColor.AQUA+""+ChatColor.BOLD+coins+" Gold Coins has been added to you account.");
+                        }
                         db.query("INSERT INTO "+config.getPrefix()+"Achievements (UID, Achievement, Location,"
-                                +" EventType, XP, Server) VALUES ("
+                                +" EventType, Gold, XP, Server) VALUES ("
                                 +"'"+data.getInt("UID")+"', '"+title+"', '"+player.getLocation()+"', "
-                                +"3, "+xp+", '"+config.getServerName()+"')");
+                                +"3, "+coins+", "+xp+", '"+config.getServerName()+"')");
                         if(commands.iterator().hasNext()) {
                             for(String command: commands) {
                                 plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player", player.getName()));
@@ -154,10 +160,16 @@ public class SessionEvents implements Listener {
                         
                         player.sendTitle(ChatColor.GOLD+title, ChatColor.BLUE+subtitle, 20, 90, 20);
                         player.sendMessage(ChatColor.BOLD+"New Achievement: "+title);
+                        long coins = 0;
+                        if (plugin.getServer().getPluginManager().isPluginEnabled("JaggyGold")) {
+                            coins = config.Chat.getLong(count + ".gold");
+                            plugin.gm.addGold(player,coins);
+                            plugin.cmds.sendMessage(player, ChatColor.AQUA+""+ChatColor.BOLD+coins+" Gold Coins has been added to you account.");
+                        }
                         db.query("INSERT INTO "+config.getPrefix()+"Achievements (UID, Achievement, Location,"
-                                +" EventType, XP, Server) VALUES ("
+                                +" EventType, Gold, XP, Server) VALUES ("
                                 +"'"+data.getInt("UID")+"', '"+title+"', '"+player.getLocation()+"', "
-                                +"3, "+xp+", '"+config.getServerName()+"')");
+                                +"3, "+coins+", "+xp+", '"+config.getServerName()+"')");
                         if(commands.iterator().hasNext()) {
                             for(String command: commands) {
                                 plugin.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player", player.getName()));

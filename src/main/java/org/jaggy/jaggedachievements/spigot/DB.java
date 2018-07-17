@@ -17,6 +17,7 @@
  */
 package org.jaggy.jaggedachievements.spigot;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.util.logging.Level;
@@ -51,25 +52,48 @@ public class DB {
         MysqlPort = plugin.config.getMysqlPort();
         Prefix = plugin.config.getPrefix();
         useSSL = plugin.config.useSSL();
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            // Setup the connection with the DB
-            plugin.log.info("Connecting to database...");
-            db = DriverManager.getConnection("jdbc:mysql://"
-                    + MysqlHost + ":" + MysqlPort + "/" + DBName + "?"
-                    + "user=" + MysqlUser + "&useSSL="+useSSL+"&password=" + MysqlPass);
-        } catch (ClassNotFoundException | SQLException ex) {
-            plugin.log.severe(ex.getMessage());
+        if (DBType.toUpperCase().equals("MYSQL")) {
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                // Setup the connection with the DB
+                plugin.log.info("Connecting to database...");
+                db = DriverManager.getConnection("jdbc:mysql://"
+                        + MysqlHost + ":" + MysqlPort + "/" + DBName + "?"
+                        + "user=" + MysqlUser + "&useSSL=" + useSSL + "&password=" + MysqlPass);
+            } catch (ClassNotFoundException | SQLException ex) {
+                plugin.log.severe(ex.getMessage());
+            }
+        } else {
+            try {
+                plugin.log.info("Opening database...");
+                File file;
+                String loc;
+                //test to see if it exists and set the location to look
+                if(DBLocation.equals("plugins/JaggedAchievements/")) {
+                    file = new File(plugin.getDataFolder(), DBName);
+                    loc = plugin.getDataFolder() + DBName;
+                } else {
+                    file = new File(DBLocation, DBName);
+                    loc = DBLocation+DBName;
+                }
+                if (!file.exists()) {
+                    file.mkdirs();
+                    try {
+                        file.createNewFile();
+                    } catch (IOException e) {
+                        plugin.log.info(e.getMessage());
+                    }
+                }
+                Class.forName("org.h2.Driver");
+                db = DriverManager.
+                        getConnection("jdbc:h2:file:"+loc, "sa", "");
+            } catch (ClassNotFoundException | SQLException ex) {
+                plugin.log.log(Level.SEVERE,ex.getMessage(),ex);
+            }
         }
         if (db != null) {
-            try {
-                this.createDB();
-                plugin.loaded = true;
-            } catch (SQLException | IOException ex) {
-                plugin.loaded = false;
-                plugin.log.log(Level.SEVERE, null, ex);
-            }
+            this.createDB();
+            plugin.loaded = true;
         } else {
             plugin.log.severe("Can not connect to database. Jagged Achievements will not work!");
             plugin.loaded = false;

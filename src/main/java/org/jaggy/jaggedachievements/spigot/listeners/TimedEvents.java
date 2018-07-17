@@ -82,10 +82,16 @@ public class TimedEvents extends BukkitRunnable {
             List<String> commands = config.Timed.getStringList(minutes + ".commands");
             player.sendTitle(ChatColor.GOLD + title, ChatColor.BLUE + subtitle, 20, 90, 20);
             player.sendMessage(ChatColor.BOLD + "New Achievement: " + title);
+            long coins = 0;
+            if (plugin.getServer().getPluginManager().isPluginEnabled("JaggyGold")) {
+                coins = config.Timed.getLong(minutes + ".gold");
+                plugin.gm.addGold(player,coins);
+                plugin.cmds.sendMessage(player, ChatColor.AQUA+""+ChatColor.BOLD+coins+" Gold Coins has been added to you account.");
+            }
             db.query("INSERT INTO " + config.getPrefix() + "Achievements (UID, Achievement,"
-                    + " EventType, XP, Server) VALUES ("
+                    + " EventType, Gold, XP, Server) VALUES ("
                     + "'" + UID + "', '" + title + "', "
-                    + "5, " + xp + ", '" + config.getServerName() + "')");
+                    + "5, "+coins+", " + xp + ", '" + config.getServerName() + "')");
             nextKey = keys.next();
             if (commands.iterator().hasNext()) {
                 commands.forEach((command) -> {
