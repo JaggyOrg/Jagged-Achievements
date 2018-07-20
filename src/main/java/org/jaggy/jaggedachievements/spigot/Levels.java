@@ -21,6 +21,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+import org.jaggy.jaggedachievements.spigot.db.DBHandler;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -37,7 +38,7 @@ public class Levels {
 
     private final Jagged plugin;
     private final Config config;
-    private final DB db;
+    private final DBHandler db;
     private final YamlConfiguration lconfig;
     private int xp;
     private List commands;
@@ -47,7 +48,7 @@ public class Levels {
         plugin = p;
         config = p.config;
         lconfig = config.Levels;
-        db = p.db;
+        db = p.db.getHandler();
     }
 
     /**

@@ -25,6 +25,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.jaggy.jaggedachievements.spigot.Config;
 import org.jaggy.jaggedachievements.spigot.DB;
 import org.jaggy.jaggedachievements.spigot.Jagged;
+import org.jaggy.jaggedachievements.spigot.db.DBHandler;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -48,7 +49,7 @@ public class TimedEvents extends BukkitRunnable {
     private final ResultSet result;
     private final long Joined;
     private final Config config;
-    private final DB db;
+    private final DBHandler db;
     private int UID = 0;
     private String nextKey;
     private final Iterator<String> keys;
@@ -56,12 +57,12 @@ public class TimedEvents extends BukkitRunnable {
     public TimedEvents(Jagged p, PlayerJoinEvent event) {
         plugin = p;
         config = p.config;
-        db = p.db;
+        db = p.db.getHandler();
         keys = config.Timed.getKeys(false).iterator();
         player = event.getPlayer();
         Joined = Calendar.getInstance().getTime().getTime();
         nextKey = keys.next();
-        result = plugin.db.query("SELECT * FROM " + plugin.config.getPrefix() + "Players WHERE Name = '" + player.getName() + "'");
+        result = db.query("SELECT * FROM " + plugin.config.getPrefix() + "Players WHERE Name = '" + player.getName() + "'");
         try {
             result.first();
             UID = result.getInt("UID");

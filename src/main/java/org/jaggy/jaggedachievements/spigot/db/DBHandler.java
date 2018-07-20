@@ -16,13 +16,16 @@
  *
  */
 
-package org.jaggy.jaggedachievements.bungee;
+package org.jaggy.jaggedachievements.spigot.db;
 
-import net.md_5.bungee.api.plugin.Plugin;
+import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-public class Jagged extends Plugin {
-
-    public void onEnable() {
-        
-    }
+public abstract class DBHandler {
+    public abstract void createDB() throws SQLException, IOException;
+    public abstract ResultSet query(String query);
+    public abstract void connect();
+    public abstract void disconnect();
+    public abstract boolean tableExists(String table);
 }

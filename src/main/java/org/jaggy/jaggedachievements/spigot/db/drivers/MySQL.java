@@ -15,54 +15,47 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package org.jaggy.jaggedachievements.spigot;
 
+package org.jaggy.jaggedachievements.spigot.db.drivers;
+
+import org.jaggy.jaggedachievements.spigot.Jagged;
 import org.jaggy.jaggedachievements.spigot.db.DBHandler;
-import org.jaggy.jaggedachievements.spigot.db.drivers.H2;
-import org.jaggy.jaggedachievements.spigot.db.drivers.MySQL;
 
-import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.util.logging.Level;
 
-/**
- * Database class library for plugin
- *
- * @author Quirkylee
- */
-public class DB {
+public class MySQL extends DBHandler {
+    private final Jagged plugin;
+    private final String MysqlHost;
+    private final String MysqlUser;
+    private final String DBName;
+    private final String MysqlPass;
+    private final int MysqlPort;
+    private final String Prefix;
+    private final boolean useSSL;
+    private Connection db;
 
-    private Jagged plugin;
-    private String DBType;
-    private DBHandler dbHandler;
-
-
-    public void load(Jagged p) {
-        plugin = p;
-        DBType = plugin.config.getDBType();
-        if (DBType.toUpperCase().equals("MYSQL")) {
-            dbHandler = new MySQL(p);
-        } else {
-            dbHandler = new H2(p);
-        }
-        if (db != null) {
-            this.createDB();
-            plugin.loaded = true;
-        } else {
-            plugin.log.severe("Can not connect to database. Jagged Achievements will not work!");
-            plugin.loaded = false;
-        }
+    public MySQL(Jagged jagged) {
+        plugin = jagged;
+        MysqlHost = plugin.config.getMysqlHost();
+        MysqlUser = plugin.config.getMysqlUser();
+        DBName = plugin.config.getDBName();
+        MysqlPass = plugin.config.getMysqlPass();
+        MysqlPort = plugin.config.getMysqlPort();
+        Prefix = plugin.config.getPrefix();
+        useSSL = plugin.config.useSSL();
     }
 
-    private void createDB() throws SQLException, IOException {
-        // CReate Settings table
+    @Override
+    public void createDB() throws SQLException, IOException {
+        // Create Settings table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Settings (\n"
                 + "ServerID INT(64) NOT NULL AUTO_INCREMENT,\n"
                 + "Server VARCHAR(60),\n"
                 + "Version VARCHAR(60),\n"
                 + "PRIMARY KEY (ServerID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
-        
+
         //Create Players table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Players (\n"
                 + "UID INT(64) NOT NULL AUTO_INCREMENT,\n"
@@ -73,7 +66,7 @@ public class DB {
                 + "Name VARCHAR(60),\n"
                 + "Level INT(4) DEFAULT 0,\n"
                 + "PRIMARY KEY (UID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
-                
+
         //Create Player Events table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "PlayerEvents (\n"
                 + "EventID int(64) NOT NULL AUTO_INCREMENT,\n"
@@ -82,8 +75,8 @@ public class DB {
                 + "EventType INT(1) NOT NULL,\n"
                 + "Server VARCHAR(60),\n"
                 + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
-                + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
-        
+                + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latain1 AUTO_INCREMENT=1;");
+
         //Create Item Events table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "ItemEvents (\n"
                 + "EventID int(64) NOT NULL AUTO_INCREMENT,\n"
@@ -94,7 +87,7 @@ public class DB {
                 + "Server VARCHAR(60),\n"
                 + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
-        
+
         //Create Block Events table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "BlockEvents (\n"
                 + "EventID int(64) NOT NULL AUTO_INCREMENT,\n"
@@ -105,7 +98,7 @@ public class DB {
                 + "Server VARCHAR(60),\n"
                 + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
-        
+
         //Create Entity Events table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "EntityEvents (\n"
                 + "EventID int(64) NOT NULL AUTO_INCREMENT,\n"
@@ -115,7 +108,7 @@ public class DB {
                 + "Server VARCHAR(60),\n"
                 + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "PRIMARY KEY (EventID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
-        
+
         //Create achievement table
         this.query("CREATE TABLE IF NOT EXISTS " + Prefix + "Achievements (\n"
                 + "AID int(64) NOT NULL AUTO_INCREMENT,\n"
@@ -123,41 +116,73 @@ public class DB {
                 + "Achievement VARCHAR(200) NOT NULL,\n"
                 + "Location VARCHAR(255) DEFAULT NULL,\n"
                 + "EventType INT(1) NOT NULL,\n"
+                + "Gold INT(64) DEFAULT 0,\n"
                 + "XP INT(64) NOT NULL,\n"
                 + "Server VARCHAR(60),\n"
                 + "eventtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
                 + "PRIMARY KEY (AID)) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
     }
 
-    public void unload() {
-        dbHandler.disconnect();
-    }
-
-
-    /**
-     * Initializes key data
-     */
-    public void enable() {
+    @Override
+    public ResultSet query(String query) {
+        ResultSet result = null;
         try {
-            if (dbHandler.tableExists(plugin.config.getPrefix() + "Settings")) {
-                ResultSet data = dbHandler.query("SELECT * FROM " + plugin.config.getPrefix() + "Settings WHERE Server = '" + plugin.config.getServerName() + "'");
-                if (data.next()) {
-                    String version = data.getString("Version");
-
-                    if (!plugin.getDescription().getVersion().equals(version)) {
-                        //String current = plugin.getDescription().getVersion();
-                        //plugin.getResource(version + "to" + current + ".sql");
-                    }
-                } else {
-                    dbHandler.query("INSERT INTO " + plugin.config.getPrefix() + "Settings (Server, Version) VALUES ('" + plugin.config.getServerName() + "', '" + plugin.getDescription().getVersion() + "')");
-                }
+            Statement statement = db.createStatement();
+            String[] type = query.split(" ", 2);
+            if (type[0].equalsIgnoreCase("SELECT")) {
+                result = statement.executeQuery(query);
+            } else {
+                statement.executeUpdate(query);
             }
         } catch (SQLException ex) {
             plugin.log.severe(ex.getMessage());
         }
+        return result;
     }
 
-    public DBHandler getHandler() {
-        return dbHandler;
+    @Override
+    public void connect() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            // Setup the connection with the DB
+            plugin.log.info("Connecting to database...");
+            db = DriverManager.getConnection("jdbc:mysql://"
+                    + MysqlHost + ":" + MysqlPort + "/" + DBName + "?"
+                    + "user=" + MysqlUser + "&useSSL=" + useSSL + "&password=" + MysqlPass);
+        } catch (ClassNotFoundException | SQLException ex) {
+            plugin.log.severe(ex.getMessage());
+        }
+        if (db != null) {
+            try {
+                this.createDB();
+            } catch (SQLException | IOException e) {
+                e.printStackTrace();
+            }
+            plugin.loaded = true;
+        } else {
+            plugin.log.severe("Can not connect to database. Jagged Achievements will not work!");
+            plugin.loaded = false;
+        }
+    }
+
+    @Override
+    public void disconnect() {
+        try {
+            db.close();
+        } catch (SQLException ex) {
+            plugin.log.log(Level.SEVERE, null, ex);
+
+        }
+    }
+    @Override
+    public boolean tableExists(String table) {
+        try {
+            DatabaseMetaData dbm = db.getMetaData();
+            ResultSet tables = dbm.getTables(null, null, table, null);
+            return tables.next();
+        } catch (SQLException ex) {
+            plugin.log.severe(ex.getMessage());
+        }
+        return false;
     }
 }

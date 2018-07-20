@@ -25,6 +25,7 @@ import org.bukkit.entity.Player;
 import org.jaggy.jaggedachievements.spigot.Config;
 import org.jaggy.jaggedachievements.spigot.DB;
 import org.jaggy.jaggedachievements.spigot.Jagged;
+import org.jaggy.jaggedachievements.spigot.db.DBHandler;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -38,13 +39,13 @@ public class Achievements implements CommandExecutor {
 
     private final Jagged plugin;
     private final Config config;
-    private final DB db;
+    private final DBHandler db;
     private String name;
 
     public Achievements(Jagged p) {
         plugin = p;
         config = p.config;
-        db = p.db;
+        db = p.db.getHandler();
     }
 
     @Override

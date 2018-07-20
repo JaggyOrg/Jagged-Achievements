@@ -29,6 +29,7 @@ import org.bukkit.scheduler.BukkitTask;
 import org.jaggy.jaggedachievements.spigot.Config;
 import org.jaggy.jaggedachievements.spigot.DB;
 import org.jaggy.jaggedachievements.spigot.Jagged;
+import org.jaggy.jaggedachievements.spigot.db.DBHandler;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -42,12 +43,12 @@ import java.util.logging.Level;
 public class SessionEvents implements Listener {
 
     private final Jagged plugin;
-    private final DB db;
+    private final DBHandler db;
     private final Config config;
     
     public SessionEvents(Jagged p) {
         plugin = p;
-        db = plugin.db;
+        db = plugin.db.getHandler();
         config = plugin.config;
     }
     BukkitTask task;
