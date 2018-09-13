@@ -1,6 +1,7 @@
 name: JaggedAchievements
 main: org.jaggy.jaggedachievements.spigot.Jagged
 version: 1.3-RELEASE
+api-version: 1.13
 softdepend: [JaggyGold]
 author: Quirkylee, Markjat
 
